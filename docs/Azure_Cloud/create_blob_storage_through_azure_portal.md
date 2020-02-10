@@ -36,31 +36,31 @@ Blob Storage에 대한 내용은 다음을 참조 바랍니다.
 
 ### 1. Azure Portal에서 **리소스 만들기** > **저장소** > **Storage 계정**을 선택합니다.
 
- ![][Link-Create_Blob_Storage_1]
+![][Link-Create_Blob_Storage_1]
 
- ![][Link-Create_Blob_Storage_2]
+![][Link-Create_Blob_Storage_2]
 
 ### 2. **기본 사항**을 입력 및 설정합니다. 자신이 만든 **IoT Hub와 동일한 리소스 그룹 및 위치**를 선택합니다.
 
- ![][Link-Create_Blob_Storage_4]
+![][Link-Create_Blob_Storage_4]
 
 ### 3. **검토 + 만들기**를 선택합니다.
 
- ![][Link-Create_Blob_Storage_5]
+![][Link-Create_Blob_Storage_5]
 
 ### 4. 모든 항목을 입력 및 설정을 하였다면, **만들기**를 눌러 Blob Storage를 생성합니다.
 
- ![][Link-Create_Blob_Storage_6]
+![][Link-Create_Blob_Storage_6]
 
 ### 5. Blob Storage 생성 후, **개요** > **컨테이너** > **컨테이너**를 선택합니다.
 
- ![][Link-Create_Blob_Storage_10]
+![][Link-Create_Blob_Storage_10]
 
- ![][Link-Create_Blob_Storage_11]
+![][Link-Create_Blob_Storage_11]
 
 ### 6. Container의 **이름**을 입력 후, **확인**을 눌러 Container를 생성합니다.
 
- ![][Link-Create_Blob_Storage_12]
+![][Link-Create_Blob_Storage_12]
 
 
 

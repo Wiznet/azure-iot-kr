@@ -34,19 +34,19 @@
 
 ### 1. Stream Analytics에서 작업 **작업 토폴로지** > **입력** > **스트림 입력 추가**를 선택합니다.
 
- ![][Link-Configure_Job_Input_2]
+![][Link-Configure_Job_Input_2]
 
 ### 2. **IoT Hub**를 선택합니다.
 
- ![][Link-Configure_Job_Input_3]
+![][Link-Configure_Job_Input_3]
 
 ### 3. **입력 별칭**을 입력하고 나머지 항목을 다음 그림과 같이 입력 및 설정합니다.
 
- ![][Link-Configure_Job_Input_5]
+![][Link-Configure_Job_Input_5]
 
 ### 4. **저장**을 눌러 작업 입력을 구성합니다.
 
- ![][Link-Configure_Job_Input_6]
+![][Link-Configure_Job_Input_6]
 
 
 
@@ -55,19 +55,19 @@
 
 ### 1. Stream Analytics에서 작업 **작업 토폴로지** > **출력** > **추가**를 선택합니다.
 
- ![][Link-Configure_Job_Output_2]
+![][Link-Configure_Job_Output_2]
 
 ### 2. **Blob Storage/Data Lake Storage Gen2**를 선택합니다.
 
- ![][Link-Configure_Job_Output_3]
+![][Link-Configure_Job_Output_3]
 
 ### 3. **출력 별칭**을 입력하고 나머지 항목을 다음 그림과 같이 입력 및 설정합니다.
 
- ![][Link-Configure_Job_Output_5]
+![][Link-Configure_Job_Output_5]
 
 ### 4. **저장**을 눌러 작업 출력을 구성합니다.
 
- ![][Link-Configure_Job_Output_6]
+![][Link-Configure_Job_Output_6]
 
 
 
@@ -76,15 +76,15 @@
 
 ### 1. Stream Analytics에서 작업 **작업 토폴로지** > **쿼리**를 선택합니다.
 
- ![][Link-Define_The_Transformation_Query_2]
+![][Link-Define_The_Transformation_Query_2]
 
 ### 2. **Query**를 다음 그림과 같이 **수정 및 작성**합니다.
 
- ![][Link-Define_The_Transformation_Query_3]
+![][Link-Define_The_Transformation_Query_3]
 
 ### 3. **쿼리 저장**을 눌러 저장합니다.
 
- ![][Link-Define_The_Transformation_Query_4]
+![][Link-Define_The_Transformation_Query_4]
 
 
 

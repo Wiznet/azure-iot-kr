@@ -31,37 +31,37 @@
 
 ### 1. IoT Hub에서 **설정** > **공유 액세스 정책**을 선택합니다.
 
- ![][Link-Create_Sas_Token_1]
+![][Link-Create_Sas_Token_1]
 
 ### 2. **iothubowner**를 선택합니다.
 
- ![][Link-Create_Sas_Token_2]
+![][Link-Create_Sas_Token_2]
 
 ### 3. 공유 엑세스 키에서 **연결 문자열 - 기본 키**를 복사합니다.
 
- ![][Link-Create_Sas_Token_3]
+![][Link-Create_Sas_Token_3]
 
 ### 4. **Azure IoT Explorer**를 실행합니다.
 
 ### 5. **연결 문자열 - 기본 키**를 입력하고 **Connent** 눌러 접속합니다.
 
- ![][Link-Create_Sas_Token_4]
+![][Link-Create_Sas_Token_4]
 
 ### 6. IoT Device 목록에서 IoT Device 선택 후, 눌러 엽니다.
 
- ![][Link-Create_Sas_Token_5]
+![][Link-Create_Sas_Token_5]
 
 ### 7. **Device identity** > **Connection String with SAS token**을 눌러 엽니다.
 
- ![][Link-Create_Sas_Token_6]
+![][Link-Create_Sas_Token_6]
 
 ### 8. **Symmetric key**, **Expiration(minutes)** 값 입력 후, **Generate**를 눌러 생성합니다.
 
- ![][Link-Create_Sas_Token_8]
+![][Link-Create_Sas_Token_8]
 
- ![][Link-Create_Sas_Token_9]
+![][Link-Create_Sas_Token_9]
 
- ![][Link-Create_Sas_Token_10]
+![][Link-Create_Sas_Token_10]
 
 
 

@@ -36,13 +36,13 @@ Stream Analytics에 대한 내용은 다음을 참조 바랍니다.
 
 ### 1. Azure Portal에서 **리소스 만들기** > **분석** > **Stream Analytics job**을 선택합니다.
 
- ![][Link-Create_Stream_Analytics_1]
+![][Link-Create_Stream_Analytics_1]
 
- ![][Link-Create_Stream_Analytics_3]
+![][Link-Create_Stream_Analytics_3]
 
 ### 2. **작업 이름**을 입력하고 나머지 항목을 다음 그림과 같이 입력 및 설정합니다.
 
- ![][Link-Create_Stream_Analytics_5]
+![][Link-Create_Stream_Analytics_5]
 
 ### 3. **만들기**를 눌러 생성합니다.
 
