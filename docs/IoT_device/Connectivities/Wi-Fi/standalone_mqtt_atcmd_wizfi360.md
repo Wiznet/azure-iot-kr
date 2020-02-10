@@ -52,15 +52,15 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 
 본 문서를 따라하기에 전에 다음 항목이 준비되어야 합니다.
 
-- **Hadrware**
-	- Desktop or Laptop Computer
-	- [WizFi360-EVB-Shield][Link-Wizfi360-Evb-Shield]
-	- Micro 5 pin USB Cable
+### Hadrware
+ - Desktop or Laptop Computer
+ - [WizFi360-EVB-Shield][Link-Wizfi360-Evb-Shield]
+ - Micro 5 pin USB Cable
 
-	![][Link-Required_Item]
+ ![][Link-Required_Item]
 
-- **Software**
-	- Preferred Serial Terminal (TeraTerm, Hercules, etc . . .)
+### Software
+ - Preferred Serial Terminal (TeraTerm, Hercules, etc . . .)
 
 
 
@@ -69,15 +69,17 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 
 ### 1. Hardware 준비
 
-WizFi360-EVB-Shield는 **Standalone Mode**로 사용되어 집니다. 따라서 **Micro USB**를 사용하기 위하여 다음과 같이 설정 필요합니다.
+WizFi360-EVB-Shield는 **Standalone Mode**로 사용되어 집니다. 따라서 WizFi360-EVB-Shield의 DIP Switch를 다음과 같이 설정이 필요합니다.
 
 > * SW1 : On
+> * SW2 : Off
+> * SW3 : Off
 
-![][Link-Set_Wizfi360_Evb_Shield_Sw1]
+![][Link-Set_Wizfi360_Evb_Shield_Dip_Sw]
 
 ### 2. Device 연결
 
-Hardware 설정 후, Micro 5 pin USB Cable을 이용하여 WizFi360 EVB Shield를 Desktop 혹은 Laptop Computer와 연결을 합니다.
+Hardware 설정 후, Micro 5 pin USB Cable을 이용하여 WizFi360-EVB-Shield를 Desktop 혹은 Laptop Computer와 연결을 합니다.
 
 **장치 관리자**에서 WizFi360-EVB-Shield와 연결된 **COM Port**를 확인 할 수 있습니다.
 
@@ -210,8 +212,8 @@ Stream Analytics에서 **개요** > **시작** > **현재** > **시작**을 선�
 [Link-Configure_Stream_Analytics_Job_Input_Output_And_Define_The_Transformation_Query_Through_Azure_Portal]: https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/configure_stream_analytics_job_input_output_and_define_the_transformation_query_through_azure_portal.md
 [Link-Wizfi360-Evb-Shield]: https://wizwiki.net/wiki/doku.php/products:wizfi360:start
 [Link-Required_Item]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/mqtt_atcmd_wizfi360_required_item_1.png
-[Link-Set_Wizfi360_Evb_Shield_Sw1]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/set_wizfi360_evb_shield_sw1.png
-[Link-Device-Management]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/device_management.png
+[Link-Set_Wizfi360_Evb_Shield_Dip_Sw]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/set_wizfi360_evb_shield_dip_sw_1.png
+[Link-Device-Management]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/device_management_1.png
 [Link-Cp210x_Usb_To_Uart_Bridge_Vcp_Drivers]: https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers
 [Link-Wizfi360-Quick_Start_Guide]: http://wizwiki.net/wiki/lib/exe/fetch.php/products:wizfi360:wizfi360ds:wizfi360qs_v113k.pdf
 [Link-Wizfi360-At_Instruction_Set]: http://wizwiki.net/wiki/lib/exe/fetch.php/products:wizfi360:wizfi360ds:wizfi360_atset_v106k.pdf
