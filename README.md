@@ -4,7 +4,7 @@
 
 ## Contents
 -  [Folder Structure](#Folder)
--  [시작하기 전에](#사전준비)
+-  [공통준비사항](#사전준비)
 -  [Cat.M1 통신을 이용하여 Azure IoT Hub에 연결하기](#Cat)
 -  [WiFi 통신을 이용하여 Azure IoT Hub에 연결하기](#WiFi)
 -  [Azure Sphere Gardian(WiFi, Ethernet)을 이용하여 Azure IoT Hub에 연결하기](#Azure_Sphere_Gardian)
@@ -37,7 +37,7 @@ Cat.M1, WiFi, Ethernet, Gateway를 이용하여 Azure IoT Hub에 하는 예제 �
 :heavy_check_mark: 준비 완료  :heavy_minus_sign: 준비중
 
 <a name="사전준비"></a>
-## 시작하기 전에
+## 공통준비사항
 |         Doc        |                            Description                           |
 |:------------------:|:------------------|
 | :heavy_check_mark: | [[MS]Azure IoT Hub 만들기](https://docs.microsoft.com/ko-kr/azure/iot-hub/iot-hub-create-through-portal)
