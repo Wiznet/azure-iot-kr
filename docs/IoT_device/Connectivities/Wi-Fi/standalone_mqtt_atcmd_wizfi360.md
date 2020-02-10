@@ -29,6 +29,7 @@
 > * [Azure Portal을 사용하여 Stream Analytics 작업 입 · 출력 구성 및 변환 Query 정의][Link-Configure_Stream_Analytics_Job_Input_Output_And_Define_The_Transformation_Query_Through_Azure_Portal]
 
 
+
 <a name="Introduction"></a>
 ## 소개
 
@@ -46,25 +47,22 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 
 
 
-
 <a name="Prerequisites"></a>
 ## Step 1: 필수 구성 요소
 
 본 문서를 따라하기에 전에 다음 항목이 준비되어야 합니다.
 
 - **Hadrware**
+ - Desktop or Laptop Computer
+ - [WizFi360-EVB-Shield][Link-Wizfi360-Evb-Shield]
+ - Micro 5 pin USB Cable
 
-	- Desktop or Laptop Computer
-
-	- [WizFi360-EVB-Shield][Link-Wizfi360-Evb-Shield]
-
-	- Micro 5 pin USB Cable
-
-	![][Link-Required_Item]
+ ![][Link-Required_Item]
 
 - **Software**
+ - Preferred Serial Terminal (TeraTerm, Hercules, etc . . .)
 
-	- Preferred Serial Terminal (TeraTerm, Hercules, etc . . .)
+
 
 <a name="Prepare_Device"></a>
 ## Step 2: Device 준비
@@ -197,8 +195,8 @@ Stream Analytics에서 **개요** > **시작** > **현재** > **시작**을 선�
 
 - [Azure Portal을 사용하여 Stream Analytics 작업 입 · 출력 구성 및 변환 Query 정의][Link-Configure_Stream_Analytics_Job_Input_Output_And_Define_The_Transformation_Query_Through_Azure_Portal]
 - WizFi360 MQTT AT Command를 이용한 Auzre IoT Hub 연동 예제
-	- Mbed Example
-	- Arduino Example
+ - Mbed Example
+ - Arduino Example
 
 
 
