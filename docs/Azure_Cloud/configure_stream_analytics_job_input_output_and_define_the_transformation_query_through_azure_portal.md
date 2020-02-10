@@ -5,15 +5,10 @@
 ## 목차
 
 - [시작하기 전에](#Prerequisites)
-
 - [소개](#Introduction)
-
 - [Step1 : 작업 입력 구성](#Step-1-Configure_Job_Input)
-
 - [Step2 : 작업 출력 구성](#Step-2-Configure_Job_Output)
-
 - [Step3 : 변환 Query 정의](#Step-3-Define_The_Transformation_Query)
-
 - [더 보기](#Read_More)
 
 
@@ -97,9 +92,7 @@
 ## 더 보기
 
 - [Azure Portal을 사용하여 Stream Analytics 만들기][Link-Create_Stream_Analytics_Through_Azure_Portal]
-
 - [WizFi360 MQTT AT Command를 이용하여 Auzre IoT Hub에 연동][Link-Standalone_Mqtt_Atcmd_Wizfi360]
-
 - [WizFi360 Azure AT Command를 이용하여 Auzre IoT Hub에 연동][Link-Standalone_Azure_Atcmd_Wizfi360]
 
 

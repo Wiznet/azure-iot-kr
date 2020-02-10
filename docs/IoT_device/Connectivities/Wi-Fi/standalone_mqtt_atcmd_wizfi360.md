@@ -5,17 +5,11 @@
 ## 목차
 
 - [시작하기 전에](#Prerequisites)
-
 - [소개](#Introduction)
-
 - [Step 1: 필수 구성 요소](#Prerequisites)
-
 - [Step 2: Device 준비](#Prepare_Device)
-
 - [Step 3: 동작 예제](#Example)
-
 - [Step 4: 동작 예제 결과](#Result)
-
 - [더 보기](#Read_More)
 
 
@@ -51,7 +45,7 @@ Data 통신은 다음과 같은 구조로 이루어집니다.
 
 IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Blob Storage로 저장이 됩니다.
 
-본 문서는 WizFi360 MQTT AT Command 이용하여 Microsoft Azure Service 연결 방법에 대한 가이드를 제공합니다.
+본 문서는 WizFi360 MQTT AT Command 이용하여 Microsoft Azure Service 연결 방법에 대한 Guide를 제공합니다.
 
 
 
@@ -61,7 +55,7 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 
 본 문서를 따라하기에 전에 다음 항목이 준비되어야 합니다.
 
-- ** Hadrware **
+- **Hadrware**
 
 	- Desktop or Laptop Computer
 
@@ -205,11 +199,8 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 ## 더 보기
 
 - [Azure Portal을 사용하여 Stream Analytics 작업 입 · 출력 구성 및 변환 Query 정의][Link-Configure_Stream_Analytics_Job_Input_Output_And_Define_The_Transformation_Query_Through_Azure_Portal]
-
 - WizFi360 MQTT AT Command를 이용한 Auzre IoT Hub 연동 예제
-
 	- Mbed Example
-
 	- Arduino Example
 
 

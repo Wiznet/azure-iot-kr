@@ -5,9 +5,7 @@
 ## 목차
 
 - [시작하기 전에](#Prerequisites)
-
 - [소개](#Introduction)
-
 - [SAS Token 생성하기](#Create_Sas_Token)
 
 

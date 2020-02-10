@@ -5,11 +5,8 @@
 ## 목차
 
 - [시작하기 전에](#Prerequisites)
-
 - [소개](#Introduction)
-
 - [Blob Storage 만들기](#Create_Blob_Storage)
-
 - [더 보기](#Read_More)
 
 
@@ -71,7 +68,6 @@ Blob Storage에 대한 내용은 다음을 참조 바랍니다.
 ## 더 보기
 
 - [Azure Portal을 사용하여 IoT Hub 만들기][Link-Create_IoT_Hub_Through_Azure_Portal]
-
 - [Azure Portal을 사용하여 Stream Analytics 만들기][Link-Create_Stream_Analytics_Through_Azure_Portal]
 
 

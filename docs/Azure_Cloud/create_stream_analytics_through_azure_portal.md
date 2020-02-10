@@ -5,11 +5,8 @@
 ## 목차
 
 - [시작하기 전에](#Prerequisites)
-
 - [소개](#Introduction)
-
 - [Stream Analytics 만들기](#Create_Stream_Analytics)
-
 - [더 보기](#Read_More)
 
 
@@ -55,7 +52,6 @@ Stream Analytics에 대한 내용은 다음을 참조 바랍니다.
 ## 더 보기
 
 - [Azure Portal을 사용하여 Blob Storage 만들기][Link-create_blob_storage_through_azure_portal]
-
 - [Azure Portal을 사용하여 Stream Analytics 작업 입 · 출력 구성 및 변환 Query 정의][Link-Configure_Stream_Analytics_Job_Input_Output_And_Define_The_Transformation_Query_Through_Azure_Portal]
 
 
