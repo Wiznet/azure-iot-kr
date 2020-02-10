@@ -66,14 +66,10 @@ Cat.M1, WiFi, Ethernet, Gateway를 이용하여 Azure IoT Hub에 하는 예제 �
 | :heavy_minus_sign: | [Azure Sphere Gardia(WIZ-AZG-200)을 이용하여 이더넷으로 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Ethernet/wiz-asg-200_azure_sphere_sdk.md)
 
 <a name="Azure_Cloud"></a>
-## Azure IoT Hub의 디바이스 데이터로 Azure Cloud 서비스 구현하기
+## Azure IoT Hub와 연동되는 Azure Cloud 서비스 구현하기
 |         Doc        |                            Description                           |
 |:------------------:|:------------------|
-| :heavy_check_mark: | [Azure Portal을 사용하여 Blob Storage 만들기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/create_blob_storage_through_azure_portal.md)
-| :heavy_check_mark: | [Azure Portal을 사용하여 Stream Analytics 만들기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/create_stream_analytics_through_azure_portal.md)
-| :heavy_check_mark: | [웹 응용 프로그램에서 Azure IoT hub의 실시간 센서 데이터 시각화](https://docs.microsoft.com/ko-kr/azure/iot-hub/iot-hub-live-data-visualization-in-web-apps)
-| :heavy_check_mark: | [Power BI를 사용하여 Azure IoT Hub에서 실시간 센서 데이터 시각화](https://docs.microsoft.com/ko-kr/azure/iot-hub/iot-hub-live-data-visualization-in-power-bi)
-| :heavy_check_mark: | [Azure Machine Learning에서 IoT Hub의 센서 데이터를 사용한 일기 예보](https://docs.microsoft.com/ko-kr/azure/iot-hub/iot-hub-weather-forecast-machine-learning)
+| :heavy_check_mark: | [Azure Cloud 서비스 구현하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/README.md)
 
 <a name="Support"></a>
 ## Support
