@@ -11,9 +11,9 @@
 <a name="overview"></a>
 ## overview
 
-WIZnet WIZ-ASG-200 Guardian Module based on Azure Sphere is an edge module with 2-port Ethernet and Wireless to provide secure connectivity to IoT devices.
-This module will help minimize chagnes in the existing wired network environment and make the most of the existing devices.
-WIZnet WIZ-ASG-200 Guardian Module based on Avnet's Azure Sphere MT3620 module can be connected to IoT devices via WIZnet W5500 Hardwired TCP/IP Ethernet chip and provides secure connectivity to the devices, with Azure Sphere' dual band Wi-Fi or reference Ethernet(ENC28J60).
+WIZ-ASG-200은 IoT 장치의 보안성을 강화한 Microsoft Azure Sphere모듈을 기반으로 2포트 이더넷 및 WiFi를 갖춘 Ege 모듈입니다. 
+기존 유선 네트워크 환경으로 구성된 장치를 물리적인 변화를 최소화하여 Microsoft가 제공하는 보안 솔루션을 사용 할 수 있도록 도와줍니다. Avnet의 Azure Sphere(AES-MS-MT3620-M-G) 모듈을 기반으로 WIZnet W5500 Hardwired TCP/IP 이더넷 칩을 통해 IoT 장치에 연결될 수 있으며 Azure Sphere의 듀얼 밴드 Wi-Fi 또는 이더넷(ENC28J60)으로 장치에 안전하게 연결됩니다.
+
 
 
 <a name="features"></a>
