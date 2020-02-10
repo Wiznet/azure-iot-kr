@@ -8,7 +8,7 @@
 -  [Cat.M1 통신을 이용하여 Azure IoT Hub에 연결하기](#Cat)
 -  [WiFi 통신을 이용하여 Azure IoT Hub에 연결하기](#WiFi)
 -  [Azure Sphere Gardian(WiFi, Ethernet)을 이용하여 Azure IoT Hub에 연결하기](#Azure_Sphere_Gardian)
--  [Azure Cloud](#Azure_Cloud)
+-  [Azure IoT Hub와 연동되는 Azure Cloud 서비스 구현하기](#Azure_Cloud)
 -  [Support](#Support)
 
 
@@ -40,7 +40,7 @@ Cat.M1, WiFi, Ethernet, Gateway를 이용하여 Azure IoT Hub에 하는 예제 �
 ## 사전준비
 |         Doc        |                            Description                           |
 |:------------------:|:------------------|
-| :heavy_check_mark: | [Azure IoT Hub 만들기](https://docs.microsoft.com/ko-kr/azure/iot-hub/iot-hub-create-through-portal)
+| :heavy_check_mark: | [[MS]Azure IoT Hub 만들기](https://docs.microsoft.com/ko-kr/azure/iot-hub/iot-hub-create-through-portal)
 
 
 <a name="Cat"></a>
