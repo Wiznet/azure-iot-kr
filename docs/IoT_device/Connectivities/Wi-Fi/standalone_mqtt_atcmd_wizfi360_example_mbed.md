@@ -178,10 +178,10 @@ Terminal Program으로 WizFi360에서 Azure IoT Hub로 전송하는 Data, Blob S
 [Link-Set_Wizfi360_Evb_Shield_Dip_Sw]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/set_wizfi360_evb_shield_dip_sw_2.png
 [Link-Device-Management]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/device_management_2.png
 [Link-St_Link_St_Link_V2_St_Link_V2_1_Usb_Driver]: https://www.st.com/en/development-tools/stsw-link009.html
-[Link-Execute_Project_Through_Mbed_Studio_1]: https://github.com/Wiznet/azure-iot-kr/tree/master/images/execute_project_through_mbed_studio_1.png
-[Link-Execute_Project_Through_Mbed_Studio_2]: https://github.com/Wiznet/azure-iot-kr/tree/master/images/execute_project_through_mbed_studio_2.png
+[Link-Execute_Project_Through_Mbed_Studio_1]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/execute_project_through_mbed_studio_1.png
+[Link-Execute_Project_Through_Mbed_Studio_2]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/execute_project_through_mbed_studio_2.png
 [Link-Create-Sas-Token]: https://github.com/Wiznet/azure-iot-kr/tree/master/docs/Azure_Cloud/create_sas_token.md
-[Link-Execute_Project_Through_Mbed_Studio_3]: https://github.com/Wiznet/azure-iot-kr/tree/master/images/execute_project_through_mbed_studio_3.png
-[Link-Result_Execute_Project_Through_Mbed_Studio_1]: https://github.com/Wiznet/azure-iot-kr/tree/master/images/result_execute_project_through_mbed_studio_1.png
-[Link-Result_Execute_Project_Through_Mbed_Studio_2]: https://github.com/Wiznet/azure-iot-kr/tree/master/images/result_execute_project_through_mbed_studio_2.png
+[Link-Execute_Project_Through_Mbed_Studio_3]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/execute_project_through_mbed_studio_3.png
+[Link-Result_Execute_Project_Through_Mbed_Studio_1]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/result_execute_project_through_mbed_studio_1.png
+[Link-Result_Execute_Project_Through_Mbed_Studio_2]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/result_execute_project_through_mbed_studio_2.png
 [Link-Standalone_Mqtt_Atcmd_Wizfi360]: https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Wi-Fi/standalone_mqtt_atcmd_wizfi360.md
