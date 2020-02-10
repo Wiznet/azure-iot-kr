@@ -1,4 +1,4 @@
-# WizFi360 MQTT AT Command를 이용하여 Auzre IoT Hub에 연동
+# WizFi360 MQTT AT Command를 이용한 Auzre IoT Hub 연동 예제
 
 
 
@@ -62,8 +62,8 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
  ![][Link-Required_Item]
 
 ### Software
- - Preferred Serial Terminal (TeraTerm, Hercules, etc . . .)
  - [Mbed Studio][Link-Mbed Studio]
+ - Preferred Serial Terminal (TeraTerm, Hercules, etc . . .)
 
 
 
@@ -99,10 +99,66 @@ Hardware 설정 후, Mini USB Cable을 이용하여 NUCLEO-L476RG를 Desktop 혹
 <a name="Example"></a>
 ## Step 3: 동작 예제
 
+### 1. 예제 Download 및 실행
+
+**예제 Download**를 한 후, **File** > **Open Workspace**을 선택하여 **Project 실행**합니다.
+
+> 예제는 다음 경로에 위치하고 있는 Project를 참고 바랍니다.
+>
+> * **samples/Wi-Fi/WIZnet-WizFi360-Azure-MQTT_AT_Cmd**
+
+![][Link-Execute_Project_Through_Mbed_Studio_1]
+
+### 2. Parameter 값 수정
+
+Azure IoT Hub에 연결을 하기 위하여, 다음의 Parameter를 수정합니다.
+
+```cpp
+/* WiFi info */
+char ssid[] = "xxxxxxxxxx";
+char password[] = "xxxxxxxxxx";
+
+/* MQTT info */
+char hub_name[] = "xxxxxxxxxx";
+char host_name[] = "xxxxxxxxxx";
+char device_id[] = "xxxxxxxxxx";
+char sas_token[] = "xxxxxxxxxx";
+int alive_time = xx;    // range : 30 ~ 300
+```
+
+![][Link-Execute_Project_Through_Mbed_Studio_2]
+
+> **SAS Token 생성**은 다음을 참고 바랍니다.
+>
+> * [SAS Token 생성하기][Link-Create-Sas-Token]
+
+### 3. Project Build 및 Run
+
+**Run Program**을 눌러 Project Build 및 Run을 합니다.
+
+> Note :
+>
+> **Stream Analytics 실행** 중이어야 Blob Storage로 Data가 전달됩니다.
+
+![][Link-Execute_Project_Through_Mbed_Studio_3]
+
 
 
 <a name="Result"></a>
 ## Step 4: 동작 예제 결과
+
+Terminal Program으로 WizFi360에서 Azure IoT Hub로 전송하는 Data, Blob Storaged에서 WizFi360으로부터 수신한 Data를 확인 할 수 있습니다.
+
+![][Link-Result_Execute_Project_Through_Mbed_Studio_1]
+
+![][Link-Result_Execute_Project_Through_Mbed_Studio_2]
+
+
+
+<a name="Read_More"></a>
+## 더 보기
+
+- [WizFi360 MQTT AT Command를 이용하여 Auzre IoT Hub에 연동][Link-Standalone_Mqtt_Atcmd_Wizfi360]
 
 
 
@@ -122,3 +178,10 @@ Hardware 설정 후, Mini USB Cable을 이용하여 NUCLEO-L476RG를 Desktop 혹
 [Link-Set_Wizfi360_Evb_Shield_Dip_Sw]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/set_wizfi360_evb_shield_dip_sw_2.png
 [Link-Device-Management]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/device_management_2.png
 [Link-St_Link_St_Link_V2_St_Link_V2_1_Usb_Driver]: https://www.st.com/en/development-tools/stsw-link009.html
+[Link-Execute_Project_Through_Mbed_Studio_1]: https://github.com/Wiznet/azure-iot-kr/tree/master/images/execute_project_through_mbed_studio_1.png
+[Link-Execute_Project_Through_Mbed_Studio_2]: https://github.com/Wiznet/azure-iot-kr/tree/master/images/execute_project_through_mbed_studio_2.png
+[Link-Create-Sas-Token]: https://github.com/Wiznet/azure-iot-kr/tree/master/docs/Azure_Cloud/create_sas_token.md
+[Link-Execute_Project_Through_Mbed_Studio_3]: https://github.com/Wiznet/azure-iot-kr/tree/master/images/execute_project_through_mbed_studio_3.png
+[Link-Result_Execute_Project_Through_Mbed_Studio_1]: https://github.com/Wiznet/azure-iot-kr/tree/master/images/result_execute_project_through_mbed_studio_1.png
+[Link-Result_Execute_Project_Through_Mbed_Studio_2]: https://github.com/Wiznet/azure-iot-kr/tree/master/images/result_execute_project_through_mbed_studio_2.png
+[Link-Standalone_Mqtt_Atcmd_Wizfi360]: https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Wi-Fi/standalone_mqtt_atcmd_wizfi360.md

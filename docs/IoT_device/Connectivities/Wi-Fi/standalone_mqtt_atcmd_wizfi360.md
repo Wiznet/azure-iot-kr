@@ -140,7 +140,7 @@ Hardware 설정 후, Micro 5 pin USB Cable을 이용하여 WizFi360-EVB-Shield�
 
 > Note :
 >
-> Data를 Publish 할 때, [**Stream Analytics 실행**](#Run_Stream_Analytics)  중이어야 Blob Storage로 Data가 전달됩니다.
+> Data를 Publish 할 때, [**Stream Analytics 실행**](#Run_Stream_Analytics) 중이어야 Blob Storage로 Data가 전달됩니다.
 
 | Command | Response |
 |:--------|:--------|
@@ -197,7 +197,7 @@ Stream Analytics에서 **개요** > **시작** > **현재** > **시작**을 선�
 
 - [Azure Portal을 사용하여 Stream Analytics 작업 입 · 출력 구성 및 변환 Query 정의][Link-Configure_Stream_Analytics_Job_Input_Output_And_Define_The_Transformation_Query_Through_Azure_Portal]
 - WizFi360 MQTT AT Command를 이용한 Auzre IoT Hub 연동 예제
-	- Mbed Example
+	- [Mbed Example][Link-Standalone_Mqtt_Atcmd_Wizfi360_Example_Mbed]
 	- Arduino Example
 
 
@@ -227,3 +227,4 @@ Stream Analytics에서 **개요** > **시작** > **현재** > **시작**을 선�
 [Link-Start_The_Stream_Analytics_Job_And_Check_The_Output_6]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/start_the_stream_analytics_job_and_check_the_output_6.png
 [Link-Start_The_Stream_Analytics_Job_And_Check_The_Output_7]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/start_the_stream_analytics_job_and_check_the_output_7.png
 [Link-Start_The_Stream_Analytics_Job_And_Check_The_Output_8]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/start_the_stream_analytics_job_and_check_the_output_8.png
+[Link-Standalone_Mqtt_Atcmd_Wizfi360_Example_Mbed]: https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Wi-Fi/standalone_mqtt_atcmd_wizfi360_example_mbed.md
