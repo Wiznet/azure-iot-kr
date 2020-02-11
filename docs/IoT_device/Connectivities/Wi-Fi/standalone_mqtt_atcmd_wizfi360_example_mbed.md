@@ -105,7 +105,7 @@ Hardware 설정 후, Mini USB Cable을 이용하여 NUCLEO-L476RG를 Desktop 혹
 
 > 예제는 다음 경로에 위치하고 있는 Project를 참고 바랍니다.
 >
-> * **samples/Wi-Fi/WIZnet-WizFi360-Azure-MQTT_AT_Cmd**
+> * **samples/Wi-Fi/Mbed-WizFi360-Azure-MQTT_AT_Cmd**
 
 ![][Link-Execute_Project_Through_Mbed_Studio_1]
 

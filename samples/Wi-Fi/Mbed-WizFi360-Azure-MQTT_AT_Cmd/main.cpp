@@ -434,6 +434,8 @@ int8_t deviceConnBroker_WizFi360(int en_auth, char *broker_ip, int broker_port)
 
      _parser->send("AT+MQTTCON=%d,\"%s\",%d", en_auth, broker_ip, broker_port);
 
+    t.start();
+    
     while(done != true)
     {
         done = (_parser->recv("CONNECT") &&  _parser->recv("OK"));
