@@ -1,4 +1,4 @@
-# WIZnet IoT Shield(WIoT-QC01)와 STM32L496 Nucleo-144를 이용한 X-CUBE-AZURE SDK 개발 환경 구축
+# STM32L496 Nucleo-144와 WIZnet IoT Shield(WIoT-QC01)를 이용한 Azure IoT Hub 연동
 
 ## 목차
 
