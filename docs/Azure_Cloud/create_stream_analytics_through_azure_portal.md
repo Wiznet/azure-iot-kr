@@ -27,7 +27,7 @@
 
 Stream Analytics에 대한 내용은 다음을 참조 바랍니다.
 
-- [Azure Stream Analytics란?][Link-What_Is_Azure_Stream_Analytics]
+- [[MS] Azure Stream Analytics란?][Link-What_Is_Azure_Stream_Analytics]
 
 
 

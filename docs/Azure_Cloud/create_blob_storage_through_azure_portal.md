@@ -27,7 +27,7 @@
 
 Blob Storage에 대한 내용은 다음을 참조 바랍니다.
 
-- [Azure Blob Storage 소개][Link-Introduction_To_Azure_Blob_Storage]
+- [[MS] Azure Blob Storage 소개][Link-Introduction_To_Azure_Blob_Storage]
 
 
 
