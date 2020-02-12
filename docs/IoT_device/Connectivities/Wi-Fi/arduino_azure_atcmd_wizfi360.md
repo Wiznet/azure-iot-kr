@@ -220,7 +220,7 @@ Syntax:
 ### Arduino 예제 코드 다운로드
 다음 링크에서 Arduino 예제 코드를 다운로드한 후, ino 확장자의 프로젝트 파일을 실행 시킵니다.
 > 예제에서 활용할 Ping test sample code는 저장소의 아래 경로에 위치하고 있습니다.
-> \samples\Arduino_Azure_atcmd_WizFi360\
+> **\samples\Arduino_Azure_Atcmd_Wizfi360\**
 
 ### Modify parameters
 
@@ -233,7 +233,7 @@ char pass[] = "XXXXXXXXXXXXXXXXXX";        // your network password
 //Azure Hub & Device credentials
 char IotHubname[] = "XXXXXXXXXXXXXXX";
 char DeviceId[] = "XXXXXXXXXXXXX";
-char DevicePrimaryKey[] = "XXXXXXXXXXXXXXXXXX"; 
+char DevicePrimaryKey[] = "XXXXXXXXXXXXXXXXXX";
 ````
 
 
