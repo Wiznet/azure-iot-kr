@@ -44,21 +44,58 @@ Data 통신은 다음과 같은 구조로 이루어집니다.
 
 IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Blob Storage로 저장이 됩니다.
 
-본 문서는 WizFi360 MQTT AT Command 이용한 Microsoft Azure Service 연동 예제에 대하여 Guide를 제공합니다.
+본 문서는 [Arduino][Link-Arduino] 기반 WizFi360 MQTT AT Command 이용한 Microsoft Azure Service 연동 예제에 대하여 Guide를 제공합니다.
 
 
 
 <a name="Prerequisites"></a>
 ## Step 1: 필수 구성 요소
 
-준비 중
+본 문서를 따라하기 전에 다음 항목이 준비되어야 합니다.
+
+### Hadrware
+ - Desktop or Laptop Computer
+ - [WizFi360-EVB-Shield][Link-Wizfi360-Evb-Shield]
+ - [Arduino Mega 2560][Link-Arduino_Mega_2560]
+ - USB Type-B Cable
+
+ ![][Link-Required_Item]
+
+### Software
+ - [Arduino IDE][Link-Arduino_Ide]
+ - Preferred Serial Terminal (TeraTerm, Hercules, etc . . .)
 
 
 
 <a name="Prepare_Device"></a>
 ## Step 2: Device 준비
 
-준비 중
+### 1. Hardware 준비
+
+WizFi360-EVB-Shield는 Arduino Mega 2560과 결합을 하여 사용되어 집니다. 따라서 WizFi360-EVB-Shield의 DIP Switch 설정 및 Jumper Cable 연결이 다음과 같이 필요합니다.
+
+> * SW1 : Off
+> * SW2 : Off
+> * SW3 : On
+> * WizFi360-EVB-Shield : D8 - Arduino Mega 2560 : 18
+> * WizFi360-EVB-Shield : D2 - Arduino Mega 2560 : 19
+> * WizFi360-EVB-Shield : SDA - Arduino Mega 2560 : 14
+
+
+### 2. Device 연결
+
+Hardware 설정 후, USB Type-B Cable을 이용하여 Arduino Mega 2560을 Desktop 혹은 Laptop Computer와 연결을 합니다.
+
+**장치 관리자**에서 Arduino Mega 2560과 연결된 **COM Port**를 확인 할 수 있습니다.
+
+![][Link-Device-Management]
+
+> Arduino IDE를 정상적으로 설치를 하였다면 위와 같이 장치 관리자에서 COM 포트를 확인할 수 있습니다.
+>
+> 장치 관리자에서 COM Port를 확인 할 수 없는 경우, 다음 Link의 설명에 따라 설정 바랍니다.
+>
+> * [Manually install Drivers on Windows][Link-Manually_Install_Drivers_On_Windows]
+
 
 
 <a name="Example"></a>
@@ -91,3 +128,10 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 [Link-Configure_Stream_Analytics_Job_Input_Output_And_Define_The_Transformation_Query_Through_Azure_Portal]: https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/configure_stream_analytics_job_input_output_and_define_the_transformation_query_through_azure_portal.md
 [Link-Standalone_Mqtt_Atcmd_Wizfi360]: https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Wi-Fi/standalone_mqtt_atcmd_wizfi360.md
 [Link-Data_Communication_Structure]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/mqtt_data_communication_structure.png
+[Link-Arduino]: https://www.arduino.cc/
+[Link-Wizfi360-Evb-Shield]: https://wizwiki.net/wiki/doku.php/products:wizfi360:start
+[Link-Arduino_Mega_2560]: https://store.arduino.cc/usa/mega-2560-r3
+[Link-Required_Item]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/mqtt_atcmd_wizfi360_required_item_3.png
+[Link-Arduino_Ide]: https://www.arduino.cc/en/main/software
+[Link-Device-Management]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/device_management_3.png
+[Link-Manually_Install_Drivers_On_Windows]: https://www.arduino.cc/en/Guide/DriverInstallation

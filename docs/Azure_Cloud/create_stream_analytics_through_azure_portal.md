@@ -46,6 +46,8 @@ Stream Analytics에 대한 내용은 다음을 참조 바랍니다.
 
 ### 3. **만들기**를 눌러 생성합니다.
 
+![][Link-Create_Stream_Analytics_6]
+
 
 
 <a name="Read_More"></a>

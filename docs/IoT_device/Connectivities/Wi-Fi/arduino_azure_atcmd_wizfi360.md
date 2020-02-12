@@ -219,8 +219,10 @@ Syntax:
 
 ### Arduino 예제 코드 다운로드
 다음 링크에서 Arduino 예제 코드를 다운로드한 후, ino 확장자의 프로젝트 파일을 실행 시킵니다.
-> 예제에서 활용할 Ping test sample code는 저장소의 아래 경로에 위치하고 있습니다.
-> **\samples\Arduino_Azure_Atcmd_Wizfi360\**
+
+> 예제는 다음 경로에 위치하고 있는 Project를 참고 바랍니다.
+>
+> **samples/Wi-Fi/Arduino_Azure_Atcmd_Wizfi360**
 
 ### Modify parameters
 

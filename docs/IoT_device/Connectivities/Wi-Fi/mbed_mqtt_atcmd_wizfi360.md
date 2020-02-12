@@ -44,14 +44,14 @@ Data 통신은 다음과 같은 구조로 이루어집니다.
 
 IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Blob Storage로 저장이 됩니다.
 
-본 문서는 WizFi360 MQTT AT Command 이용한 Microsoft Azure Service 연동 예제에 대하여 Guide를 제공합니다.
+본 문서는 [Mbed][Link-Mbed] 기반 WizFi360 MQTT AT Command 이용한 Microsoft Azure Service 연동 예제에 대하여 Guide를 제공합니다.
 
 
 
 <a name="Prerequisites"></a>
 ## Step 1: 필수 구성 요소
 
-본 문서를 따라하기에 전에 다음 항목이 준비되어야 합니다.
+본 문서를 따라하기 전에 다음 항목이 준비되어야 합니다.
 
 ### Hadrware
  - Desktop or Laptop Computer
@@ -62,7 +62,7 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
  ![][Link-Required_Item]
 
 ### Software
- - [Mbed Studio][Link-Mbed Studio]
+ - [Mbed Studio][Link-Mbed_Studio]
  - Preferred Serial Terminal (TeraTerm, Hercules, etc . . .)
 
 
@@ -72,7 +72,7 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 
 ### 1. Hardware 준비
 
-WizFi360-EVB-Shield는 NUCLEO-L476RG와 결합을 하여 사용되어 집니다. 따라서 WizFi360-EVB-Shield의 DIP Switch 및 UART Jumper Pin 를 다음과 같이 설정이 필요합니다.
+WizFi360-EVB-Shield는 NUCLEO-L476RG와 결합을 하여 사용되어 집니다. 따라서 WizFi360-EVB-Shield의 DIP Switch 및 UART Jumper Pin을 다음과 같이 설정이 필요합니다.
 
 > * SW1 : Off
 > * SW2 : Off
@@ -171,10 +171,11 @@ Terminal Program으로 WizFi360에서 Azure IoT Hub로 전송하는 Data, Blob S
 [Link-Configure_Stream_Analytics_Job_Input_Output_And_Define_The_Transformation_Query_Through_Azure_Portal]: https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/configure_stream_analytics_job_input_output_and_define_the_transformation_query_through_azure_portal.md
 [Link-Standalone_Mqtt_Atcmd_Wizfi360]: https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Wi-Fi/standalone_mqtt_atcmd_wizfi360.md
 [Link-Data_Communication_Structure]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/mqtt_data_communication_structure.png
+[Link-Mbed]: https://www.mbed.com/en/
 [Link-Wizfi360-Evb-Shield]: https://wizwiki.net/wiki/doku.php/products:wizfi360:start
 [Link-Nucleo-L476rg]:https://os.mbed.com/platforms/ST-Nucleo-L476RG/
 [Link-Required_Item]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/mqtt_atcmd_wizfi360_required_item_2.png
-[Link-Mbed Studio]: https://os.mbed.com/studio/
+[Link-Mbed_Studio]: https://os.mbed.com/studio/
 [Link-Set_Wizfi360_Evb_Shield_Dip_Sw]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/set_wizfi360_evb_shield_dip_sw_2.png
 [Link-Device-Management]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/device_management_2.png
 [Link-St_Link_St_Link_V2_St_Link_V2_1_Usb_Driver]: https://www.st.com/en/development-tools/stsw-link009.html
