@@ -48,7 +48,7 @@ Cat.M1, WiFi, Ethernet, Gateway를 이용하여 Azure IoT Hub에 하는 예제 �
 |         Doc        |                            Description                           |
 |:------------------:|:------------------|
 | :heavy_check_mark: | [MCU(STM32)와 Cat.M1(BG96)모듈을 이용하여 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/LTE/Cat.M1/nucleo_stm32l496_azure_st_sdk_bg96.md)
-| :heavy_minus_sign: | [라즈베리파이와 Cat.M1(BG96)모듈을 이용하여 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/LTE/Cat.M1/raspberrypi_azure_c_sdk.md)
+| :heavy_check_mark: | [라즈베리파이와 Cat.M1(BG96)모듈을 이용하여 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/LTE/Cat.M1/raspberrypi_azure_c_sdk.md)
 | :heavy_minus_sign: | [Cat.M1(BG96)모듈의 AT커맨드로 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/LTE/Cat.M1/WIZnet_IoT_Shield_Catm1_BG96_Standalone.md)
 
 <a name="WiFi"></a>
