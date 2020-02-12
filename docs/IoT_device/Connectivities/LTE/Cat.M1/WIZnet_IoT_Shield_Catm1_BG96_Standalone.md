@@ -10,8 +10,6 @@
 
 
 
-###작성중
-
 <a name="Prerequisites"></a>
 ## 시작하기 전에
 **[Azure Portal]("https://portal.azure.com/")**에 Login 을 합니다. 계정이 없는 경우, 계정 생성 후에 Login을 진행합니다.
