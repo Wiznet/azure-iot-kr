@@ -17,6 +17,8 @@
 
 본 가이드는 Ubuntu OS에 Docker를 설치하고, Raspbian Cross Compile 환경이 구성되어 있는 Docker Image를 이용하여 Raspbian에서 실행가능한 바이너리를 생성해보도록 하겠습니다.
 
+![][1]
+
 생성된 바이너리를 Raspberry pi에 옮겨 실행하고 에이엠 텔레콤의 Cat.M1 외장형 모뎀을 이용하여 SK Telecom Cat.M1 망을 통해 AZURE IoT Hub로 데이터를 보내는 방법에 대하여 설명합니다.
 
 Raspberry Pi를 이용하면 Cat.M1 모듈의 RNDIS(Remote Network Driver Interface Specification) 기능을 사용할 수 있습니다. RNDIS는 주로 USB 인터페이스를 통해 사용할 수 있으며, 대부분의 Window, Linux, FreeBSD 등 운영체제에 대한 가상 이더넷 링크를 제공합니다.
@@ -60,14 +62,14 @@ Raspberry Pi를 이용하면 Cat.M1 모듈의 RNDIS(Remote Network Driver Interf
 ```cpp
 git clone https://github.com/Azure-Samples/iot-hub-c-raspberrypi-docker.git
 ```
-![][1]
+![][2]
 
 
 다음으로, Ubuntu OS에서 Raspbian Cross Compile 환경이 구축되어 있는 Docker Iamge를 받습니다.
 ```cpp
 sudo docker pull microsoft/iot-hub-c-raspberrypi-build
 ```
-![][2]
+![][3]
 
 
 <a name="Step-3-Build"></a>
@@ -121,7 +123,7 @@ sudo docker run --rm -v $PWD/iot-hub-c-raspberrypi-docker/samples:/repo -it micr
 
 정상적으로 빌드가 완료 되면, 다음과 같이 `Build succeeded!` 구문과 실행가능한 바이너리가 생성된것을 확인할 수 있습니다.
 
-![][3]
+![][4]
 
 ### 3) 생성된 실행 가능한 바이너리를 SSH를 통해 Raspberry Pi로 이동
 
@@ -134,7 +136,7 @@ scp -r azure-iot-hub pi@222.98.173.238:/home/pi
 scp build/azure-iot-hub/azure-blink pi@222.98.173.238:/home/pi/azure-iot-hub
 ```
 
-![][4]
+![][5]
 <a name="Step-4-SetRNDIS"></a>
 ## Step 4: 에이엠 텔레콤 Cat.M1 외장형 모뎀의 RNDIS 모드 설정
 
@@ -171,7 +173,7 @@ OK
 
 ### 3) WIoT-AM01 RNDIS 동작 확인
 위와 같이 하드웨어 연결이 정상적으로 되었고 Cat.M1 모듈 또한 RNDIS 모드를 이용하기 위한 설정이 정상적으로 되었다면 다음과 같이 Raspberry Pi에서 Cat.M1 네트워크가 연결된 것을 확인 할 수 있습니다.
-![][5]
+![][6]
 
 
 <a name="Step-5-PrepareDevice"></a>
@@ -179,7 +181,7 @@ OK
 
 에이엠 텔레콤 외장형 모뎀과 Raspbarry pi를 아래와 같이 연결합니다.
 
-![][6] 
+![][7] 
 
 Raspberry pi와 이 외의 장치는 필요에 맞게 연결하여 사용 합니다.
 
@@ -192,7 +194,7 @@ Raspberry pi와 이 외의 장치는 필요에 맞게 연결하여 사용 합니
 ./azure-blink "<AZURE DEVICE CONNECTION STRING>"
 ```
 
-![][7]
+![][8]
 
 
 <a name="ReadMore"></a>
@@ -206,13 +208,14 @@ Raspberry pi와 이 외의 장치는 필요에 맞게 연결하여 사용 합니
 [nucleo-stm32l496_azure-st-sdk]: ./nucleo_stm32l496_azure_st_sdk_bg96.md
 [st-azure-dashboard]: ../../../../Azure_Cloud/st_azure_dashboard.md
 
-[1]: ../../../../../images/raspberrypi-azure-c-sdk-1.png "Keil 프로젝트 화면"
-[2]: ../../../../../images/raspberrypi-azure-c-sdk-2.png "Keil 프로젝트 화면"
-[3]: ../../../../../images/raspberrypi-azure-c-sdk-3.png "Keil 프로젝트 화면"
-[4]: ../../../../../images/raspberrypi-azure-c-sdk-4.png "Keil 프로젝트 화면"
-[5]: ../../../../../images/raspberrypi-azure-c-sdk-5.png "Keil 프로젝트 화면"
-[6]: ../../../../../images/raspberrypi-azure-c-sdk-6.png "장치 관리자"
-[7]: ../../../../../images/raspberrypi-azure-c-sdk-7.png "장치 관리자"
+[1]: ../../../../../images/raspberrypi-azure-c-sdk-1.png "크로스 컴파일 환경"
+[2]: ../../../../../images/raspberrypi-azure-c-sdk-2.png "깃허브 - iot-hub-c-raspberrypi-docker 다운로드"
+[3]: ../../../../../images/raspberrypi-azure-c-sdk-3.png "도커 - Kiot-hub-c-raspberrypi-build 이미지 다운로드"
+[4]: ../../../../../images/raspberrypi-azure-c-sdk-4.png "프로그램 빌드"
+[5]: ../../../../../images/raspberrypi-azure-c-sdk-5.png "SSH를 통해 파일 전송"
+[6]: ../../../../../images/raspberrypi-azure-c-sdk-6.png "RNDIS 동작 확인"
+[7]: ../../../../../images/raspberrypi-azure-c-sdk-7.png "디바이스 연결"
+[8]: ../../../../../images/raspberrypi-azure-c-sdk-8.png "실행 결과"
 
 
 
