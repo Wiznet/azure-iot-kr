@@ -29,7 +29,7 @@ WIZ-ASG-200은 IoT 보안성능을 강화한 2포트 이더넷 및 WiFi Edge 모
 - Support Ethernet or Dual Wi-Fi (2.4/5GHz) interface for Azure connection
 - Support Auto Ethernet and Wi-Fi switching for stable Azure connection
 - Support USB Interface for debug, service & recovery UARTs, and JTAG
-- Available in minimizing the existing wired network to support greenfield + brownfield
+- Available in minimizing the existing wired network to support greenfield + brownfield
 - Support variety protocols for brownfield wired network : TCP, UDP, ICMP, IPv4, ARP, IGMP, PPPoE 
 
 
@@ -46,24 +46,31 @@ WIZ-ASG-200은 IoT 보안성능을 강화한 2포트 이더넷 및 WiFi Edge 모
 ### Hardware
 
 * WIZ-ASG-200 
-* Micro 5pin usb cable
+* Development Computer with Windows 10 or Linux OS
+* Micro 5 pin USB cable
 * 5V 2A 전원 케이블
 
 ### Software 
 
-[[MS] Azure Sphere: 설정 프로시저 개요](https://docs.microsoft.com/ko-kr/azure-sphere/install/overview)
+다음 링크를 참조하여 필수 소프트웨어에 대한 설치 및 설정을 진행합니다.
 
-* Windows 10 1주년 업데이트 이상을 실행하는 PC 또는 Ubuntu 18.04 LTS를 실행하는 Linux 머신
-* Visual Studio 2019 Enterprise, Professional, Community 버전 16.04 이상
-* Visual Studio용 Azure Sphere SDK Preview 설치
-* 구독이 있는 Azure 계정
+* [[MS] Azure Sphere: 설정 프로시저 개요](https://docs.microsoft.com/ko-kr/azure-sphere/install/overview)
+
+* [[MS] Azure Sphere: 앱 개발을 위한 Windows PC 설정](https://docs.microsoft.com/ko-kr/azure-sphere/install/development-environment-windows)
+
+* [[MS] Azure Sphere: 앱 개발을 위한 Linux 시스템 설정](https://docs.microsoft.com/ko-kr/azure-sphere/install/development-environment-linux)
+
 
 <a name="step-2-device-configuration"></a>
 ## Step 2: WIZ-ASG-200 디바이스 설정
 
 ### 디바이스 연결 확인
 
-PC와 디바이스를 micro 5 pin USB 케이블로 연결하면 FTDI 드라이버가 자동 설치됩니다. 설치가 완료되면 장치관리자에 3개의 COM 포트가 인식되었는지 확인합니다.
+PC와 디바이스를 micro 5 pin USB 케이블로 연결하면 FTDI 드라이버가 자동 설치됩니다. 드라이버 설치가 완료되면 장치관리자(Device Manager)에 3개의 COM 포트가 인식되었는지 확인합니다.
+
+<img src="https://github.com/Wiznet/azure-iot-kr/blob/master/images/wiz-asg-200-comport.png?raw=true">
+
+
 
 ### 초기 디바이스 설정
 
@@ -148,13 +155,9 @@ Visual Studio를 사용하여 Application을 빌드하고 실행합니다.
 <a name="reference"></a>
 ## 참고 문서
 
-[Azure Sphere에서 이더넷에 연결](https://docs.microsoft.com/ko-kr/azure-sphere/network/connect-ethernet)
+* [Azure Sphere Bootcamp](https://github.com/azsphere/Azure-Sphere-Bootcamp)
 
-[WIZ-ASG-200를 이용하여 Azure IoT Hub에 연결하기](https://docs.microsoft.com/ko-kr/azure-sphere/app-development/use-azure-iot)
-
-[Azure Sphere Bootcamp](https://github.com/azsphere/Azure-Sphere-Bootcamp)
-
-[Azure Sphere Samples: AzureIoT](https://github.com/Azure/azure-sphere-samples/blob/master/Samples/AzureIoT/IoTHub.md)
+* [Azure Sphere Samples: AzureIoT](https://github.com/Azure/azure-sphere-samples/blob/master/Samples/AzureIoT/IoTHub.md)
 
 
 [WIZASG200]: ../../../../images/WIZ-ASG-200.png
