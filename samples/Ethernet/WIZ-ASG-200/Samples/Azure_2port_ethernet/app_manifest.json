@@ -1,0 +1,24 @@
+{
+  "SchemaVersion": 1,
+  "Name": "WIZ-ASG-200_2portEthernet",
+  "ComponentId": "819255ff-8640-41fd-aea7-f85d34c491d5",
+  "EntryPoint": "/bin/app",
+  "CmdArgs": [ " " ],
+  "Capabilities": {
+    "AllowedConnections": [
+      "global.azure-devices-provisioning.net",
+      "Azure-IoTHub-Hostname.azure-devices.net"
+    ],
+    "DeviceAuthentication": "00000000-0000-0000-0000-000000000000",
+    "Gpio": [
+      "$AVNET_MT3620_SK_USER_LED_RED",
+      "$AVNET_MT3620_SK_USER_LED_GREEN",
+      "$AVNET_MT3620_SK_USER_LED_BLUE",
+      "$AVNET_MT3620_SK_APP_STATUS_LED_YELLOW"
+    ],
+    "NetworkConfig": true,
+    "SpiMaster": [ "$AVNET_MT3620_SK_ISU1_SPI" ],
+    "WifiConfig": true
+  },
+  "ApplicationType": "Default"
+}
