@@ -81,6 +81,7 @@ WizFi360-EVB-Shield는 Arduino Mega 2560과 결합을 하여 사용되어 집니
 > * WizFi360-EVB-Shield : D2 - Arduino Mega 2560 : 19
 > * WizFi360-EVB-Shield : SDA - Arduino Mega 2560 : 14
 
+![][Link-Set_Wizfi360_Evb_Shield_Dip_Sw]
 
 ### 2. Device 연결
 
@@ -101,14 +102,61 @@ Hardware 설정 후, USB Type-B Cable을 이용하여 Arduino Mega 2560을 Deskt
 <a name="Example"></a>
 ## Step 3: 동작 예제
 
-준비 중
+### 1. 예제 Download 및 실행
+
+**예제 Download**를 한 후, .ino 확장자를 선택하여 **Project 실행**합니다.
+
+> 예제는 다음 경로에 위치하고 있는 Project를 참고 바랍니다.
+>
+> * **samples/Wi-Fi/Arduino_Mqtt_Atcmd_Wizfi360**
+
+### 2. Parameter 값 수정
+
+Azure IoT Hub에 연결을 하기 위하여, 다음의 Parameter를 수정합니다.
+
+```cpp
+/* WiFi info */
+char ssid[] = "xxxxxxxxxx";
+char password[] = "xxxxxxxxxx";
+
+/* MQTT info */
+char hub_name[] = "xxxxxxxxxx";
+char host_name[] = "xxxxxxxxxx";
+char device_id[] = "xxxxxxxxxx";
+char sas_token[] = "xxxxxxxxxx";
+int alive_time = xx;    // range : 30 ~ 300
+```
+
+![][Link-Execute_Project_Through_Arduino_Ide_1]
+
+> **SAS Token 생성**은 다음을 참고 바랍니다.
+>
+> * [SAS Token 생성하기][Link-Create-Sas-Token]
+
+### 3. Project Compile 및 Upload
+
+사용하는 Board, COM Port 선택 후, Compile 및 Upload를 수행합니다.
+
+> Note :
+>
+> **Stream Analytics 실행** 중이어야 Blob Storage로 Data가 전달됩니다.
+
+![][Link-Execute_Project_Through_Arduino_Ide_2]
+
+![][Link-Execute_Project_Through_Arduino_Ide_3]
+
+![][Link-Execute_Project_Through_Arduino_Ide_4]
 
 
 
 <a name="Result"></a>
 ## Step 4: 동작 예제 결과
 
-준비 중
+Terminal Program으로 WizFi360에서 Azure IoT Hub로 전송하는 Data, Blob Storage에서 WizFi360으로부터 수신한 Data를 확인 할 수 있습니다.
+
+![][Link-Result_Execute_Project_Through_Mbed_Studio_1]
+
+![][Link-Result_Execute_Project_Through_Mbed_Studio_2]
 
 
 
@@ -126,12 +174,20 @@ Hardware 설정 후, USB Type-B Cable을 이용하여 Arduino Mega 2560을 Deskt
 [Link-Create_Blob_Storage_Through_Azure_Portal]: https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/create_blob_storage_through_azure_portal.md
 [Link-Create_Stream_Analytics_Through_Azure_Portal]: https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/create_stream_analytics_through_azure_portal.md
 [Link-Configure_Stream_Analytics_Job_Input_Output_And_Define_The_Transformation_Query_Through_Azure_Portal]: https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/configure_stream_analytics_job_input_output_and_define_the_transformation_query_through_azure_portal.md
-[Link-Standalone_Mqtt_Atcmd_Wizfi360]: https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Wi-Fi/standalone_mqtt_atcmd_wizfi360.md
 [Link-Data_Communication_Structure]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/mqtt_data_communication_structure.png
 [Link-Arduino]: https://www.arduino.cc/
 [Link-Wizfi360-Evb-Shield]: https://wizwiki.net/wiki/doku.php/products:wizfi360:start
 [Link-Arduino_Mega_2560]: https://store.arduino.cc/usa/mega-2560-r3
 [Link-Required_Item]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/mqtt_atcmd_wizfi360_required_item_3.png
 [Link-Arduino_Ide]: https://www.arduino.cc/en/main/software
+[Link-Set_Wizfi360_Evb_Shield_Dip_Sw]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/set_wizfi360_evb_shield_dip_sw_3.png
 [Link-Device-Management]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/device_management_3.png
 [Link-Manually_Install_Drivers_On_Windows]: https://www.arduino.cc/en/Guide/DriverInstallation
+[Link-Execute_Project_Through_Arduino_Ide_1]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/execute_project_through_arduino_ide_1.png
+[Link-Create-Sas-Token]: https://github.com/Wiznet/azure-iot-kr/tree/master/docs/Azure_Cloud/create_sas_token.md
+[Link-Execute_Project_Through_Arduino_Ide_2]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/execute_project_through_arduino_ide_2.png
+[Link-Execute_Project_Through_Arduino_Ide_3]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/execute_project_through_arduino_ide_3.png
+[Link-Execute_Project_Through_Arduino_Ide_4]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/execute_project_through_arduino_ide_4.png
+[Link-Result_Execute_Project_Through_Arduino_Ide_1]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/result_execute_project_through_arduino_ide_1.png
+[Link-Result_Execute_Project_Through_Arduino_Ide_2]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/result_execute_project_through_arduino_ide_2.png
+[Link-Standalone_Mqtt_Atcmd_Wizfi360]: https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Wi-Fi/standalone_mqtt_atcmd_wizfi360.md
