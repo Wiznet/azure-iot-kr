@@ -4,17 +4,11 @@
 
 ## 목차
 - [시작하기 전에](#What_To_Do)
-
 - [소개](#Learning_Content)
-
 - [디바이스 준비](#Device_Prep)
-
 - [AT 명령어](#Required_Item)
-
 - [동작 예제](#Example)
-
 - [동작 예제 결과](#Step-5-Read_Data_From_IoT_Hub)
-
 - [다음 단계](#Next)
 
 
