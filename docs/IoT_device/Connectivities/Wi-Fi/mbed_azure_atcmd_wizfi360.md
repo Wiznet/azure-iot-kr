@@ -265,7 +265,7 @@ char device_primary_key[] = "XXXXXXXXXXXXXXXXXXXXXXXXXX=";
 
 ![](/images/Mbed_Azure_atcmd_iot_explorer.JPG)
 <a name="Next"></a>
-## 다음 단계
+## 더 보기
 
 [WizFi360 Azure AT Command를 이용하여 Azure IoT Hub에 연결]
 
