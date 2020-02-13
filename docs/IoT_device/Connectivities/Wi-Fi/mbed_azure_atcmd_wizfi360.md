@@ -281,3 +281,4 @@ char device_primary_key[] = "XXXXXXXXXXXXXXXXXXXXXXXXXX=";
 [Link-Nucleo-L476rg]:https://os.mbed.com/platforms/ST-Nucleo-L476RG/
 [Link-Device-Management]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/device_management_2.png
 [Link-Execute_Project_Through_Mbed_Studio_1]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/execute_project_through_mbed_studio_1.png
+[Link-Execute_Project_Through_Mbed_Studio_3]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/execute_project_through_mbed_studio_3.png
