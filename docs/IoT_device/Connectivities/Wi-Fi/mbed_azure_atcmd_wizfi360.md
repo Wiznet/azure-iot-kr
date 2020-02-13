@@ -230,7 +230,7 @@ Syntax:
 ![][Link-Execute_Project_Through_Mbed_Studio_1]
 
 Online Compiler 경우 다음 링크에서 Compiler에 import을 할 수 있습니다.
-> https://os.mbed.com/users/vikshin/code/mbed-os-WizFi360-Azure-ATCmd/
+> https://os.mbed.com/users/vikshin/code/Mbed-Azure-Atcmd-WizFi360/
 ![](/images/Mbed_Azure_online_compiler.JPG)
 
 ### Modify parameters
