@@ -35,5 +35,7 @@ IoT Explorer를 사용하면, 로컬 컴퓨터에서 IoT 디바이스가 보내�
 - [Azure IoT Plug and Play (PnP) Device Explorer](https://github.com/Azure/azure-iot-explorer#getting-azure-iot-explorer)
 
 ## Azure IoT Hub와 연동가능한 3rd-Party Cloud
-- [ST AZURE Dashboard]()
+- [ST AZURE Dashboard][st-azure-dashboard]
   - ST에서 제공하는 `X-CUBE-AZURE` SDK를 사용하면 ST AZURE Dashboard에 손쉽게 연동할 수 있습니다.
+
+[st-azure-dashboard]: ./st_azure_dashboard.md
