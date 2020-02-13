@@ -1,9 +1,4 @@
-
-# WIZ-ASG-200(Azure Sphere Guardian)
-![WIZASG200]
-
 # Azure Sphere Gardia(WIZ-AZG-200)을 이용하여 이더넷 or WiFi로 Azure IoT Hub에 연결
-
 
 ## 목차
 
@@ -19,16 +14,23 @@
 
 <a name="overview"></a>
 ## 소개
+
+### WIZ-ASG-200 (Azure Sphere Guardian)
+
+![WIZASG200]
+
 WIZ-ASG-200은 IoT 보안성능을 강화한 2포트 이더넷 및 WiFi Edge 모듈입니다. Microsoft Azure Sphere모듈을 사용하여 Microsoft가 제공하는 강력한 보안 서비스를 받을 수 있습니다. WIZnet W5500 Hardwired TCP/IP 이더넷 칩을 통해 IoT 장치에 연결될 수 있으며 Azure Sphere의 듀얼 밴드 Wi-Fi 또는 이더넷(ENC28J60)으로 장치에 안전하게 연결됩니다. WIZ-ASG-200을 사용하면 기존의 유선네트워크 환경의 장치가 쉽고 저렴하게 강력한 보안 솔루션을 탑제할 수 있습니다.
 
 
-### features
+### Features
 
 - Built-in Azure Sphere MT3620 Module
 - Support MS Pluton security system in MT3620
 - Support Ethernet or Dual Wi-Fi (2.4/5GHz) interface for Azure connection
 - Support Auto Ethernet and Wi-Fi switching for stable Azure connection
 - Support USB Interface for debug, service & recovery UARTs, and JTAG
+- Available in minimizing the existing wired network to support greenfield + brownfield
+- Support variety protocols for brownfield wired network : TCP, UDP, ICMP, IPv4, ARP, IGMP, PPPoE 
 
 
 본 문서는 WIZ-ASG-200을 이용하여 이더넷 또는 WiFi로 MS Azure IoT Hub에 연동하는 방법에 대한 가이드를 제공합니다. 
@@ -45,7 +47,7 @@ WIZ-ASG-200은 IoT 보안성능을 강화한 2포트 이더넷 및 WiFi Edge 모
 
 * WIZ-ASG-200 
 * Micro 5pin usb cable
-* 5V 전원 케이블
+* 5V 2A 전원 케이블
 
 ### Software 
 
