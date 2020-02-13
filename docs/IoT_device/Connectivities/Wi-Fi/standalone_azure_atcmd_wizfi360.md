@@ -307,7 +307,7 @@ Syntax:
 
 - WizFi360 Azure AT Command를 이용한 Azure IoT Hub 연동 예제
 
-	- Mbed Example
+	- [Mbed Example]
 
 	- [Arduino Example]
 
@@ -330,3 +330,4 @@ Syntax:
 [Communicate with your IoT hub using the MQTT protocol: Using the MQTT protocol directly (as a device)]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-mqtt-support
 [Azure Cloud 소개]: https://github.com/Wiznet/azure-iot-kr/tree/master/docs/Azure_Cloud
 [Arduino Example]: https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Wi-Fi/arduino_azure_atcmd_wizfi360.md
+[Mbed Example]: https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Wi-Fi/mbed_azure_atcmd_wizfi360.md
