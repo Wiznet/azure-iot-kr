@@ -267,7 +267,7 @@ char device_primary_key[] = "XXXXXXXXXXXXXXXXXXXXXXXXXX=";
 <a name="Next"></a>
 ## 다음 단계
 
-
+[WizFi360 Azure AT Command를 이용하여 Azure IoT Hub에 연결]
 
 
 [계정]: https://azure.microsoft.com/ko-kr/free/
@@ -282,3 +282,4 @@ char device_primary_key[] = "XXXXXXXXXXXXXXXXXXXXXXXXXX=";
 [Link-Device-Management]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/device_management_2.png
 [Link-Execute_Project_Through_Mbed_Studio_1]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/execute_project_through_mbed_studio_1.png
 [Link-Execute_Project_Through_Mbed_Studio_3]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/execute_project_through_mbed_studio_3.png
+[WizFi360 Azure AT Command를 이용하여 Azure IoT Hub에 연결]: https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Wi-Fi/standalone_azure_atcmd_wizfi360.md
