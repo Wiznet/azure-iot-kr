@@ -154,9 +154,9 @@ int alive_time = xx;    // range : 30 ~ 300
 
 Terminal Program으로 WizFi360에서 Azure IoT Hub로 전송하는 Data, Blob Storage에서 WizFi360으로부터 수신한 Data를 확인 할 수 있습니다.
 
-![][Link-Result_Execute_Project_Through_Mbed_Studio_1]
+![][Link-Result_Execute_Project_Through_Arduino_Ide_1]
 
-![][Link-Result_Execute_Project_Through_Mbed_Studio_2]
+![][Link-Result_Execute_Project_Through_Arduino_Ide_2]
 
 
 
