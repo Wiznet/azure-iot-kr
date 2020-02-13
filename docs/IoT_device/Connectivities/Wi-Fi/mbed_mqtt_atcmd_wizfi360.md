@@ -1,4 +1,4 @@
-# WizFi360 MQTT AT Command를 이용한 Auzre IoT Hub 연동 예제
+# WizFi360 MQTT AT Command를 이용한 Azure IoT Hub 연동 예제
 
 
 
@@ -158,7 +158,7 @@ Terminal Program으로 WizFi360에서 Azure IoT Hub로 전송하는 Data, Blob S
 <a name="Read_More"></a>
 ## 더 보기
 
-- [WizFi360 MQTT AT Command를 이용하여 Auzre IoT Hub에 연동][Link-Standalone_Mqtt_Atcmd_Wizfi360]
+- [WizFi360 MQTT AT Command를 이용하여 Azure IoT Hub에 연동][Link-Standalone_Mqtt_Atcmd_Wizfi360]
 
 
 
