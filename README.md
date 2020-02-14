@@ -7,7 +7,7 @@
 -  [공통준비사항](#사전준비)
 -  [Cat.M1 통신을 이용하여 Azure IoT Hub에 연결하기](#Cat)
 -  [WiFi 통신을 이용하여 Azure IoT Hub에 연결하기](#WiFi)
--  [Azure Sphere Gardian(WiFi, Ethernet)을 이용하여 Azure IoT Hub에 연결하기](#Azure_Sphere_Gardian)
+-  [Azure Sphere Guardian(WiFi, Ethernet)을 이용하여 Azure IoT Hub에 연결하기](#Azure_Sphere_Guardian)
 -  [Azure IoT Hub와 연동되는 Azure Cloud 서비스 구현하기](#Azure_Cloud)
 -  [Support](#Support)
 
@@ -38,38 +38,38 @@ Cat.M1, WiFi, Ethernet, Gateway를 이용하여 Azure IoT Hub에 하는 예제 �
 
 <a name="사전준비"></a>
 ## 공통준비사항
-|         Doc        |                            Description                           |
-|:------------------:|:------------------|
-| :heavy_check_mark: | [[MS]Azure IoT Hub 만들기](https://docs.microsoft.com/ko-kr/azure/iot-hub/iot-hub-create-through-portal)
+|        Doc         | Description                                                                                           |
+| :----------------: | :---------------------------------------------------------------------------------------------------- |
+| :heavy_check_mark: | [[MS]Azure IoT Hub 만들기](https://docs.microsoft.com/ko-kr/azure/iot-hub/iot-hub-create-through-portal) |
 
 
 <a name="Cat"></a>
 ## Cat.M1 통신을 이용하여 Azure IoT Hub에 연결하기
-|         Doc        |                            Description                           |
-|:------------------:|:------------------|
-| :heavy_check_mark: | [MCU(STM32)와 Cat.M1(BG96)모듈을 이용하여 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/LTE/Cat.M1/nucleo_stm32l496_azure_st_sdk_bg96.md)
-| :heavy_check_mark: | [라즈베리파이와 Cat.M1(BG96)모듈을 이용하여 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/LTE/Cat.M1/raspberrypi_azure_c_sdk.md)
-| :heavy_minus_sign: | [Cat.M1(BG96)모듈의 AT커맨드로 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/LTE/Cat.M1/WIZnet_IoT_Shield_Catm1_BG96_Standalone.md)
+|        Doc         | Description                                                                                                                                                                                |
+| :----------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| :heavy_check_mark: | [MCU(STM32)와 Cat.M1(BG96)모듈을 이용하여 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/LTE/Cat.M1/nucleo_stm32l496_azure_st_sdk_bg96.md) |
+| :heavy_check_mark: | [라즈베리파이와 Cat.M1(BG96)모듈을 이용하여 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/LTE/Cat.M1/raspberrypi_azure_c_sdk.md)                |
+| :heavy_minus_sign: | [Cat.M1(BG96)모듈의 AT커맨드로 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/LTE/Cat.M1/WIZnet_IoT_Shield_Catm1_BG96_Standalone.md)      |
 
 <a name="WiFi"></a>
 ## WiFi 통신을 이용하여 Azure IoT Hub에 연결하기
-|         Doc        |                            Description                           |
-|:------------------:|:------------------|
-| :heavy_check_mark: | [WiFi(WizFi630S)모듈의 리눅스에서 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Wi-Fi/Gateway/wizfi630s_azure_c_sdk.md)
-| :heavy_check_mark: | [WiFi(WizFi360)모듈의 MQTT AT커맨드로 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Wi-Fi/standalone_mqtt_atcmd_wizfi360.md)
-| :heavy_check_mark: | [WiFi(WizFi360)모듈의 Azure AT커맨드로 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Wi-Fi/standalone_azure_atcmd_wizfi360.md)
+|        Doc         | Description                                                                                                                                                                      |
+| :----------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| :heavy_check_mark: | [WiFi(WizFi630S)모듈의 리눅스에서 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Wi-Fi/Gateway/wizfi630s_azure_c_sdk.md)         |
+| :heavy_check_mark: | [WiFi(WizFi360)모듈의 MQTT AT커맨드로 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Wi-Fi/standalone_mqtt_atcmd_wizfi360.md)   |
+| :heavy_check_mark: | [WiFi(WizFi360)모듈의 Azure AT커맨드로 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Wi-Fi/standalone_azure_atcmd_wizfi360.md) |
 
-<a name="Azure_Sphere_Gardian"></a>
-## Azure Sphere Gardian(WiFi, Ethernet)을 이용하여 Azure IoT Hub에 연결하기
-|         Doc        |                            Description                           |
-|:------------------:|:------------------|
-| :heavy_check_mark: | [Azure Sphere Gardia(WIZ-AZG-200)을 이용하여 이더넷 or WiFi로 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Ethernet/wiz-asg-200_azure_sphere_sdk.md)
+<a name="Azure_Sphere_Guardian"></a>
+## Azure Sphere Guardian(WiFi, Ethernet)을 이용하여 Azure IoT Hub에 연결하기
+|        Doc         | Description                                                                                                                                                                                             |
+| :----------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| :heavy_check_mark: | [Azure Sphere Guardian(WIZ-ASG-200)을 이용하여 이더넷 or WiFi로 Azure IoT Hub에 연결하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/IoT_device/Connectivities/Ethernet/wiz-asg-200_azure_sphere_sdk.md) |
 
 <a name="Azure_Cloud"></a>
 ## Azure IoT Hub와 연동되는 Azure Cloud 서비스 구현하기
-|         Doc        |                            Description                           |
-|:------------------:|:------------------|
-| :heavy_check_mark: | [Azure Cloud 서비스 구현하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/README.md)
+|        Doc         | Description                                                                                           |
+| :----------------: | :---------------------------------------------------------------------------------------------------- |
+| :heavy_check_mark: | [Azure Cloud 서비스 구현하기](https://github.com/Wiznet/azure-iot-kr/blob/master/docs/Azure_Cloud/README.md) |
 
 <a name="Support"></a>
 ## Support
