@@ -62,7 +62,7 @@
 [Link-Azure-Portal]: https://portal.azure.com/
 [Link-Azure-Account-Free]: https://azure.microsoft.com/ko-kr/free/
 [Link-Create_Sas_Token_1]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/device_explorer_create_sas_token_1.png
-[Link-Create_Sas_Token_2]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/cdevice_explorer_reate_sas_token_2.png
+[Link-Create_Sas_Token_2]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/device_explorer_create_sas_token_2.png
 [Link-Create_Sas_Token_3]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/device_explorer_create_sas_token_3.png
 [Link-Device_Explorer]:https://github.com/Wiznet/azure-iot-kr/blob/master/tools/Device%20Explorer/SetupDeviceExplorer.msi
 [Link-Create_Sas_Token_4]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/device_explorer_create_sas_token_4.png
