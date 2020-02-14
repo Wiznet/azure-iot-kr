@@ -122,7 +122,9 @@ Hardware 설정 후, Micro 5 pin USB Cable을 이용하여 WizFi360-EVB-Shield�
 
 > **SAS Token 생성**은 다음을 참고 바랍니다.
 >
-> * [SAS Token 생성하기][Link-Create-Sas-Token]
+> * [Device Explorer를 사용하여 SAS Token 생성하기][Link-Create_Sas_Token_Through_Device_Explorer]
+>
+> * [Azure IoT Explorer를 사용하여 SAS Token 생성하기][Link-Create_Sas_Token_Through_Azure_Iot_Explorer]
 
 ### 5. Topic 설정
 
@@ -217,7 +219,8 @@ Stream Analytics에서 **개요** > **시작** > **현재** > **시작**을 선�
 [Link-Cp210x_Usb_To_Uart_Bridge_Vcp_Drivers]: https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers
 [Link-Wizfi360-Quick_Start_Guide]: http://wizwiki.net/wiki/lib/exe/fetch.php/products:wizfi360:wizfi360ds:wizfi360qs_v113k.pdf
 [Link-Wizfi360-At_Instruction_Set]: http://wizwiki.net/wiki/lib/exe/fetch.php/products:wizfi360:wizfi360ds:wizfi360_atset_v106k.pdf
-[Link-Create-Sas-Token]: https://github.com/Wiznet/azure-iot-kr/tree/master/docs/Azure_Cloud/create_sas_token.md
+[Link-Create_Sas_Token_Through_Device_Explorer]: https://github.com/Wiznet/azure-iot-kr/tree/master/docs/Azure_Cloud/create_sas_token_through_device_explorer.md
+[Link-Create_Sas_Token_Through_Azure_Iot_Explorer]: https://github.com/Wiznet/azure-iot-kr/tree/master/docs/Azure_Cloud/create_sas_token_through_azure_iot_explorer.md
 [Link-Standalone_Mqtt_Atcmd_Wizfi360_Set_Up_And_Run_Wizfi360_1]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/standalone_mqtt_atcmd_wizfi360_set_up_and_run_wizfi360_1.png
 [Link-Start_The_Stream_Analytics_Job_And_Check_The_Output_1]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/start_the_stream_analytics_job_and_check_the_output_1.png
 [Link-Start_The_Stream_Analytics_Job_And_Check_The_Output_2]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/start_the_stream_analytics_job_and_check_the_output_2.png

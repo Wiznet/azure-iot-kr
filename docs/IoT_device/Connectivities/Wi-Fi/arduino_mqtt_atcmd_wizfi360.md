@@ -131,7 +131,9 @@ int alive_time = xx;    // range : 30 ~ 300
 
 > **SAS Token 생성**은 다음을 참고 바랍니다.
 >
-> * [SAS Token 생성하기][Link-Create-Sas-Token]
+> * [Device Explorer를 사용하여 SAS Token 생성하기][Link-Create_Sas_Token_Through_Device_Explorer]
+>
+> * [Azure IoT Explorer를 사용하여 SAS Token 생성하기][Link-Create_Sas_Token_Through_Azure_Iot_Explorer]
 
 ### 3. Project Compile 및 Upload
 
@@ -184,7 +186,8 @@ Terminal Program으로 WizFi360에서 Azure IoT Hub로 전송하는 Data, Blob S
 [Link-Device-Management]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/device_management_3.png
 [Link-Manually_Install_Drivers_On_Windows]: https://www.arduino.cc/en/Guide/DriverInstallation
 [Link-Execute_Project_Through_Arduino_Ide_1]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/execute_project_through_arduino_ide_1.png
-[Link-Create-Sas-Token]: https://github.com/Wiznet/azure-iot-kr/tree/master/docs/Azure_Cloud/create_sas_token.md
+[Link-Create_Sas_Token_Through_Device_Explorer]: https://github.com/Wiznet/azure-iot-kr/tree/master/docs/Azure_Cloud/create_sas_token_through_device_explorer.md
+[Link-Create_Sas_Token_Through_Azure_Iot_Explorer]: https://github.com/Wiznet/azure-iot-kr/tree/master/docs/Azure_Cloud/create_sas_token_through_azure_iot_explorer.md
 [Link-Execute_Project_Through_Arduino_Ide_2]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/execute_project_through_arduino_ide_2.png
 [Link-Execute_Project_Through_Arduino_Ide_3]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/execute_project_through_arduino_ide_3.png
 [Link-Execute_Project_Through_Arduino_Ide_4]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/execute_project_through_arduino_ide_4.png

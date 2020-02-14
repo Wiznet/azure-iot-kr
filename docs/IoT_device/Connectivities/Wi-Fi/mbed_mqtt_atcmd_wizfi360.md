@@ -130,7 +130,9 @@ int alive_time = xx;    // range : 30 ~ 300
 
 > **SAS Token 생성**은 다음을 참고 바랍니다.
 >
-> * [SAS Token 생성하기][Link-Create-Sas-Token]
+> * [Device Explorer를 사용하여 SAS Token 생성하기][Link-Create_Sas_Token_Through_Device_Explorer]
+>
+> * [Azure IoT Explorer를 사용하여 SAS Token 생성하기][Link-Create_Sas_Token_Through_Azure_Iot_Explorer]
 
 ### 3. Project Build 및 Run
 
@@ -181,7 +183,8 @@ Terminal Program으로 WizFi360에서 Azure IoT Hub로 전송하는 Data, Blob S
 [Link-St_Link_St_Link_V2_St_Link_V2_1_Usb_Driver]: https://www.st.com/en/development-tools/stsw-link009.html
 [Link-Execute_Project_Through_Mbed_Studio_1]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/execute_project_through_mbed_studio_1.png
 [Link-Execute_Project_Through_Mbed_Studio_2]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/execute_project_through_mbed_studio_2.png
-[Link-Create-Sas-Token]: https://github.com/Wiznet/azure-iot-kr/tree/master/docs/Azure_Cloud/create_sas_token.md
+[Link-Create_Sas_Token_Through_Device_Explorer]: https://github.com/Wiznet/azure-iot-kr/tree/master/docs/Azure_Cloud/create_sas_token_through_device_explorer.md
+[Link-Create_Sas_Token_Through_Azure_Iot_Explorer]: https://github.com/Wiznet/azure-iot-kr/tree/master/docs/Azure_Cloud/create_sas_token_through_azure_iot_explorer.md
 [Link-Execute_Project_Through_Mbed_Studio_3]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/execute_project_through_mbed_studio_3.png
 [Link-Result_Execute_Project_Through_Mbed_Studio_1]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/result_execute_project_through_mbed_studio_1.png
 [Link-Result_Execute_Project_Through_Mbed_Studio_2]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/result_execute_project_through_mbed_studio_2.png

@@ -108,7 +108,9 @@ PS. MQTT AT Command를 지원하지 않는 경우, TCP/IP 통신을 이용하여
 
 > **SAS Token 생성**은 다음을 참고 바랍니다.
 >
-> * [SAS Token 생성하기][Link-Create-Sas-Token] 
+> * [Device Explorer를 사용하여 SAS Token 생성하기][Link-Create_Sas_Token_Through_Device_Explorer]
+>
+> * [Azure IoT Explorer를 사용하여 SAS Token 생성하기][Link-Create_Sas_Token_Through_Azure_Iot_Explorer]
 
 **Defined values:**
 
@@ -153,4 +155,5 @@ AT+QMTPUB 명령은 MQTT Broker에게 데이터를 전송할 때 사용됩니다
 
 [Link-Data_Communication_Structure]: https://github.com/Wiznet/azure-iot-kr/blob/master/images/Azure%20connection%20Flow.png?raw=true
 [Link-Azure-Portal]: https://portal.azure.com/
-[Link-Create-Sas-Token]: https://github.com/Wiznet/azure-iot-kr/tree/master/docs/Azure_Cloud/create_sas_token.md
+[Link-Create_Sas_Token_Through_Device_Explorer]: https://github.com/Wiznet/azure-iot-kr/tree/master/docs/Azure_Cloud/create_sas_token_through_device_explorer.md
+[Link-Create_Sas_Token_Through_Azure_Iot_Explorer]: https://github.com/Wiznet/azure-iot-kr/tree/master/docs/Azure_Cloud/create_sas_token_through_azure_iot_explorer.md
