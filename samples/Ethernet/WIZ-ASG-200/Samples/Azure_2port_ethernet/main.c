@@ -68,7 +68,7 @@ static volatile sig_atomic_t terminationRequired = false;
 
 #include "parson.h" // used to parse Device Twin messages.
 
-#define sampleData 1    // sample data for simulation
+#define sampleData 0    // sample data for simulation
 
 void InitPublicEthernet(void);
 void InitPublicWifi(void);
@@ -88,7 +88,7 @@ static bool wifi_connected = false;
 unsigned int storedNetworkCnt = 0;
 #endif
 
-#if 1  // wi-fi
+#if 1
 // The MT3620 currently handles a maximum of 37 stored wifi networks.
 static const unsigned int MAX_NUMBER_STORED_NETWORKS = 37;
 
@@ -117,7 +117,7 @@ uint8_t gDATABUF[1024];
 
 #define DATA_BUF_SIZE 2048
 
-// Default Network Configuration //
+// Default Static Network Configuration for TCP Server //
 wiz_NetInfo gWIZNETINFO = {{0x00, 0x08, 0xdc, 0x01, 0xab, 0xcd},
                            {192, 168, 50, 120},
                            {255, 255, 255, 0},
@@ -126,6 +126,7 @@ wiz_NetInfo gWIZNETINFO = {{0x00, 0x08, 0xdc, 0x01, 0xab, 0xcd},
                            NETINFO_STATIC};
 
 uint16_t w5500_tcps_port = 3000;
+// Default Static Network Configuration for TCP Server //
 
 // Azure IoT Hub/Central defines.
 #define SCOPEID_LENGTH 20
@@ -175,7 +176,6 @@ static int epollFd = -1;
 
 // Azure IoT poll periods
 static const int AzureIoTDefaultPollPeriodSeconds = 10;
-//static const int AzureIoTDefaultPollPeriodSeconds = 15;
 //static const int AzureIoTDefaultPollPeriodSeconds = 20;
 //static const int AzureIoTMinReconnectPeriodSeconds = 60;
 static const int AzureIoTMinReconnectPeriodSeconds = 10;
@@ -294,15 +294,14 @@ static int OutputStoredWifiNetworks(void)
     Log_Debug("INFO: Stored Wi-Fi networks:\n");
     for (i = 0; i < numberOfNetworksStored; ++i) {
         for (j = 0; j < storedNetworksArray[i].ssidLength; ++j) {
-            Log_Debug("%c", isprint(storedNetworksArray[i].ssid[j]) ? storedNetworksArray[i].ssid[j]
-                : '.');
+            Log_Debug("%c", isprint(storedNetworksArray[i].ssid[j]) ? storedNetworksArray[i].ssid[j] : '.');
         }
         assert(storedNetworksArray[i].security < 3);
         Log_Debug(" : %s : %s : %s\n", securityTypeToString[storedNetworksArray[i].security],
             storedNetworksArray[i].isEnabled ? "Enabled" : "Disabled",
             storedNetworksArray[i].isConnected ? "Connected" : "Disconnected");
 
-#if 1   // change wifi id as connected
+#if 0   // change wifi id as connected
         if (storedNetworksArray[i].isConnected) {        
             wifi_connected = true;
             Log_Debug("wi-fi[%d] Connected \n", i);
@@ -460,18 +459,18 @@ static int CheckNetworkReady(void)
     Log_Debug("azure_connected : %d \n", azure_connected);
     if (!azure_connected) {
         net_switch_toggle = true;
-        Log_Debug("net_switch_toggle : %d \n", net_switch_toggle);
     }
     else {
         if ((wlan0_status == 3) && (eth0_status == 3)) {
             net_switch_toggle = true;
-            Log_Debug("net_switch_toggle : %d \n", net_switch_toggle);
         }
         if ((wlan0_status == 1) && (eth0_status == 1)) {
             net_switch_toggle = true;     // true
-            Log_Debug("net_switch_toggle : %d \n", net_switch_toggle);
         }
     }
+    Log_Debug("net_switch_toggle : %d \n", net_switch_toggle);
+    // set azure connect trigger
+
 
     free(interfaces);
 }
@@ -515,8 +514,6 @@ static int InitPrivateEthernet(void)
 // Init Azure Sphere Ethernet
 void InitPublicEthernet(void)
 {
-    Log_Debug("InitPublicEthernet() \n");
-
     // Ensure the necessary network interface is enabled.
     int result = Networking_SetInterfaceState(EthernetInterface, true);
     if (result < 0) {
@@ -544,8 +541,6 @@ void InitPublicEthernet(void)
 // Init Azure Sphere Wi-Fi
 void InitPublicWifi(void)
 {
-    Log_Debug("InitPublicWifi() \r\n");
-
     // Ensure the necessary network interface is enabled.
     int result = Networking_SetInterfaceState(WifiInterface, true);
     if (result < 0) {
@@ -654,7 +649,7 @@ static void AzureTimerEventHandler(EventData *eventData)
     if(net_switch_toggle) {             
         net_switch_toggle = false;     // <- false
         iothubAuthenticated = false;
-        Log_Debug("iothuAuthenticated <- false \n");
+        //Log_Debug("iothuAuthenticated <- false \n");
     }
 #endif  // toggle
 
@@ -688,7 +683,7 @@ static void AzureTimerEventHandler(EventData *eventData)
     }
 
 /// send sample data for simulation
-#if 1
+#if sampleData
     SendSimulatedTemperature();
 #else
     IoTHubDeviceClient_LL_DoWork(iothubClientHandle);
@@ -864,10 +859,7 @@ static void SetupAzureClient(void)
     SetTimerFdToPeriod(azureTimerFd, &azureTelemetryPeriod);
 
     iothubAuthenticated = true;
-
-#if sampleData   // azure connected
     azure_connected = true;
-#endif
 
     if (IoTHubDeviceClient_LL_SetOption(iothubClientHandle, OPTION_KEEP_ALIVE,
                                         &keepalivePeriodSeconds) != IOTHUB_CLIENT_OK) {
@@ -1029,9 +1021,10 @@ static void SendTelemetry(const unsigned char *key, const unsigned char *value)
 static void SendTelemetryJson(const unsigned char *value)
 {
     static char eventBuffer[1024] = {0};
+    // value data must be JSON format
     // static const char *EventMsgTemplate = "{ \"%s\": \"%s\" }";
     // static const char *EventMsgTemplate = "\"{%s}\"";
-    static const char *EventMsgTemplate = "{%s}";
+    static const char *EventMsgTemplate = "%s";
     int len = snprintf(eventBuffer, sizeof(eventBuffer), EventMsgTemplate, value);
     if (len < 0)
         return;
@@ -1107,7 +1100,7 @@ static void ReportStatusCallback(int result, void *context)
     Log_Debug("INFO: Device Twin reported properties update result: HTTP status code %d\n", result);
 }
 
-#if 1
+#if sampleData
 /// <summary>
 ///     Generates a simulated Temperature and sends to IoT Hub.
 /// </summary>
@@ -1141,8 +1134,6 @@ static int SendEthernetData(uint8_t sn, uint8_t* buf, uint16_t port)
     uint8_t destip[4];
     uint16_t destport;
 
-    // Log_Debug("getSn_SR(sn): %x\n", getSn_SR(sn));
-
     switch (getSn_SR(sn)) {
         case SOCK_ESTABLISHED:
             if (getSn_IR(sn) & Sn_IR_CON) {
@@ -1161,7 +1152,6 @@ static int SendEthernetData(uint8_t sn, uint8_t* buf, uint16_t port)
                 
                 Log_Debug("Received data from socket %d: %s\n", sn, sock_buf);
                 //! Send received data from ethernet to IoT Hub
-                //    SendTelemetry("ethdata", buf + sentsize);
                 SendTelemetryJson(sock_buf);
                 IoTHubDeviceClient_LL_DoWork(iothubClientHandle);
 
