@@ -106,6 +106,12 @@ Hardware 설정 후, Mini USB Cable을 이용하여 NUCLEO-L476RG를 Desktop 혹
 > 예제는 다음 경로에 위치하고 있는 Project를 참고 바랍니다.
 >
 > * **samples/Wi-Fi/Mbed_Mqtt_Atcmd_Wizfi360**
+>
+> * **samples/Wi-Fi/Mbed_Mqtt_Atcmd_Wizfi360_Azure_C_Shared_Utility**
+>
+> **Mbed_Mqtt_Atcmd_Wizfi360** 경우에는 Device Explorer 혹은 Azure IoT Explorer와 같은 Tool을 이용하여 **별도의 SAS Token 생성 과정이 필요**합니다.
+>
+> **Mbed_Mqtt_Atcmd_Wizfi360_Azure_C_Shared_Utility** 경우에는 Azure IoT Common Library인 azure_c_shared_utility Library를 Porting을 한 Project이므로 **별도의 SAS Token 생성 과정이 필요 없으며, Project 내부에서 SAS Token 생성 과정을 처리**합니다.
 
 ![][Link-Execute_Project_Through_Mbed_Studio_1]
 
@@ -114,16 +120,19 @@ Hardware 설정 후, Mini USB Cable을 이용하여 NUCLEO-L476RG를 Desktop 혹
 Azure IoT Hub에 연결을 하기 위하여, 다음의 Parameter를 수정합니다.
 
 ```cpp
-/* WiFi info */
+/* Wi-Fi info */
 char ssid[] = "xxxxxxxxxx";
 char password[] = "xxxxxxxxxx";
 
 /* MQTT info */
+int alive_time = xx;    // range : 30 ~ 300
+
+/* Azure info */
 char hub_name[] = "xxxxxxxxxx";
 char host_name[] = "xxxxxxxxxx";
 char device_id[] = "xxxxxxxxxx";
+char device_key[] = "xxxxxxxxxx";
 char sas_token[] = "xxxxxxxxxx";
-int alive_time = xx;    // range : 30 ~ 300
 ```
 
 ![][Link-Execute_Project_Through_Mbed_Studio_2]

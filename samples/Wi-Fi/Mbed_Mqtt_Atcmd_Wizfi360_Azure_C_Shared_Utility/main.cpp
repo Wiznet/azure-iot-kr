@@ -644,15 +644,11 @@ int8_t devicePublishMsg_WizFi360(sensor *sensor_info)
 {
     int8_t ret = RET_NOK;
 
-#if 0
     if(_parser->send("AT+MQTTPUB=\"{\"deviceId\":\"MyWizFi360IoTDevice\",\"temperature\":%d,\"humidity\":%d}\"", sensor_info->cel, sensor_info->hum))
     {
         pc.printf("Publish message : %d, %d\r\n", sensor_info->cel, sensor_info->hum);
     }
-#else
-    pc.printf("Test message : %d, %d\r\n", sensor_info->cel, sensor_info->hum);
-#endif
-
+	
     return ret;
 }
 
