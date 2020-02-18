@@ -1,0 +1,24 @@
+BUILD\NUCLEO_L476RG\ARMC6\azure-iot-sdk\httpapi_compact.o: \
+  azure-iot-sdk\httpapi_compact.c \
+  BUILD\NUCLEO_L476RG\ARMC6\mbed_config.h \
+  azure-iot-sdk\azure_c_shared_utility\gballoc.h \
+  azure-iot-sdk\azure_c_shared_utility\umock_c_prod.h \
+  azure-iot-sdk\azure_c_shared_utility\macro_utils.h \
+  azure-iot-sdk\azure_c_shared_utility\httpheaders.h \
+  azure-iot-sdk\azure_c_shared_utility\crt_abstractions.h \
+  azure-iot-sdk\azure_c_shared_utility\xlogging.h \
+  azure-iot-sdk\azure_c_shared_utility\agenttime.h \
+  azure-iot-sdk\azure_c_shared_utility\optimize_size.h \
+  azure-iot-sdk\azure_c_shared_utility\xio.h \
+  azure-iot-sdk\azure_c_shared_utility\optionhandler.h \
+  azure-iot-sdk\azure_c_shared_utility\platform.h \
+  azure-iot-sdk\azure_c_shared_utility\strings.h \
+  azure-iot-sdk\azure_c_shared_utility\strings_types.h \
+  azure-iot-sdk\azure_c_shared_utility\xio.h \
+  azure-iot-sdk\azure_c_shared_utility\tlsio.h \
+  azure-iot-sdk\azure_c_shared_utility\threadapi.h \
+  azure-iot-sdk\azure_c_shared_utility\shared_util_options.h \
+  azure-iot-sdk\azure_c_shared_utility\const_defines.h \
+  azure-iot-sdk\azure_c_shared_utility\httpapi.h \
+  azure-iot-sdk\azure_c_shared_utility\httpheaders.h \
+  azure-iot-sdk\azure_c_shared_utility\buffer_.h
