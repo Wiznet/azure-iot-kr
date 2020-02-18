@@ -61,6 +61,10 @@
 #define NTP_BEGIN_TIME_MONTH            1
 #define NTP_BEGIN_TIME_DAY              1
 
+#define SEOUL                           9
+
+#define TIME_ZONE                       SEOUL
+
 /* Wi-Fi */
 #define STATION                         1
 #define SOFTAP                          2
@@ -134,7 +138,7 @@ int convertDay(int year, int month, int day);
 int differenceDay(int cur_year, int cur_month, int cur_day, int pre_year, int pre_month, int pre_day);
 int convertMonth(char *month);
 int calcNtpRawTime(int day);
-int8_t deviceSetNtpTime_WizFi360(int en_sntp, int timezone);
+int8_t deviceSetNtpTime_WizFi360(int en_sntp, int time_zone);
 int8_t deviceGetNtpTime_WizFi360(ntp_time *ntp_time_info);
 
 /* Serial */
@@ -189,7 +193,7 @@ int main()
     deviceConnAP_WizFi360(WIFI_MODE, ssid, password);
 
     /* Set NTP time */
-    deviceSetNtpTime_WizFi360(ENABLE, 8);
+    deviceSetNtpTime_WizFi360(ENABLE, TIME_ZONE);
     deviceGetNtpTime_WizFi360(&ntp_time_info);
     ntp_diff_day = differenceDay(ntp_time_info.year, convertMonth(ntp_time_info.month), ntp_time_info.day, NTP_BEGIN_TIME_YEAR, NTP_BEGIN_TIME_MONTH, NTP_BEGIN_TIME_DAY);
     ntp_raw_time = calcNtpRawTime(ntp_diff_day);
@@ -322,11 +326,11 @@ int calcNtpRawTime(int day)
     return result;
 }
 
-int8_t deviceSetNtpTime_WizFi360(int en_sntp, int timezone)
+int8_t deviceSetNtpTime_WizFi360(int en_sntp, int time_zone)
 {
     int8_t ret = RET_NOK;
 
-    if(_parser->send("AT+CIPSNTPCFG=%d,%d", en_sntp, timezone) && _parser->recv("OK"))
+    if(_parser->send("AT+CIPSNTPCFG=%d,%d", en_sntp, time_zone) && _parser->recv("OK"))
     {
         ret = RET_OK;
     }
