@@ -85,6 +85,7 @@ int alive_time = 60;    // range : 30 ~ 300
 char hub_name[] = "MyWizFi360IoTHub";
 char host_name[] = "MyWizFi360IoTHub.azure-devices.net";
 char device_id[] = "MyWizFi360IoTDevice";
+char device_key[] = "iUiK7N/mwgeVChq4aParKLxvrEL6Wgi2rJqOfJKzZb8=";
 char sas_token[] = "SharedAccessSignature sr=MyWizFi360IoTHub.azure-devices.net%2Fdevices%2FMyWizFi360IoTDevice&sig=t3R9nDS7ezMGBdb%2FNd5ktb3xQx5jx4NC02n325vRA6c%3D&se=1611895717";
 
 // ----------------------------------------------------------------------------------------------------
