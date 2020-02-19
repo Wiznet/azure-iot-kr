@@ -115,16 +115,19 @@ Hardware 설정 후, USB Type-B Cable을 이용하여 Arduino Mega 2560을 Deskt
 Azure IoT Hub에 연결을 하기 위하여, 다음의 Parameter를 수정합니다.
 
 ```cpp
-/* WiFi info */
+/* Wi-Fi info */
 char ssid[] = "xxxxxxxxxx";
 char password[] = "xxxxxxxxxx";
 
 /* MQTT info */
+int alive_time = xx;    // range : 30 ~ 300
+
+/* Azure info */
 char hub_name[] = "xxxxxxxxxx";
 char host_name[] = "xxxxxxxxxx";
 char device_id[] = "xxxxxxxxxx";
+char device_key[] = "xxxxxxxxxx";
 char sas_token[] = "xxxxxxxxxx";
-int alive_time = xx;    // range : 30 ~ 300
 ```
 
 ![][Link-Execute_Project_Through_Arduino_Ide_1]
