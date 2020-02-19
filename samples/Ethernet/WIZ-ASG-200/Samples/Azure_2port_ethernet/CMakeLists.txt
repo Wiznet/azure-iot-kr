@@ -7,10 +7,9 @@ PROJECT(AzureIoT C)
 # Create executable
 #ADD_EXECUTABLE(${PROJECT_NAME} main.c epoll_timerfd_utilities.c parson.c)
 ADD_EXECUTABLE(${PROJECT_NAME} main.c epoll_timerfd_utilities.c parson.c
-	./s_ioLibrary/Ethernet/W5500/w5500.c 
-    ./s_ioLibrary/Ethernet/W5500/w5500-dbg.c 
-	./s_ioLibrary/Ethernet/wizchip_conf.c 
-	./s_ioLibrary/Ethernet/socket.c )
+    ../../Libraries/ioLibrary_Driver/Ethernet/W5500/w5500.c
+    ../../Libraries/ioLibrary_Driver/Ethernet/wizchip_conf.c
+    ../../Libraries/ioLibrary_Driver/Ethernet/socket.c)
 
 TARGET_INCLUDE_DIRECTORIES(${PROJECT_NAME} PUBLIC ${AZURE_SPHERE_API_SET_DIR}/usr/include/azureiot)
 TARGET_COMPILE_DEFINITIONS(${PROJECT_NAME} PUBLIC AZURE_IOT_HUB_CONFIGURED)

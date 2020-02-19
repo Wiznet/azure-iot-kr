@@ -60,9 +60,9 @@
 #include <iothub.h>
 #include <azure_sphere_provisioning.h>
 
-#include "wizchip_conf.h"
-#include "W5500/w5500.h"
-#include "socket.h"
+#include "../../../Libraries/ioLibrary_Driver/Ethernet/W5500/w5500.h"
+#include "../../../Libraries/ioLibrary_Driver/Ethernet/wizchip_conf.h"
+#include "../../../Libraries/ioLibrary_Driver/Ethernet/socket.h"
 
 static volatile sig_atomic_t terminationRequired = false;
 
