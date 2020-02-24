@@ -55,7 +55,7 @@ IoT Hub로 송신이 된 Data는 Stream Analytics를 통하여 Data 저장소 Bl
 ### Hadrware
  - Desktop or Laptop Computer
  - [WizFi360-EVB-Shield][Link-Wizfi360-Evb-Shield]
- - Micro 5 pin USB Cable
+ - Micro 5 Pin USB Cable
 
  ![][Link-Required_Item]
 
