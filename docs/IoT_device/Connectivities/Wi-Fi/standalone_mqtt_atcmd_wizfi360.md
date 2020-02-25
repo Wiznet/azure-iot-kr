@@ -79,7 +79,7 @@ WizFi360-EVB-Shield는 **Standalone Mode**로 사용되어 집니다. 따라서 
 
 ### 2. Device 연결
 
-Hardware 설정 후, Micro 5 pin USB Cable을 이용하여 WizFi360-EVB-Shield를 Desktop 혹은 Laptop Computer와 연결을 합니다.
+Hardware 설정 후, Micro 5 Pin USB Cable을 이용하여 WizFi360-EVB-Shield를 Desktop 혹은 Laptop Computer와 연결을 합니다.
 
 **장치 관리자**에서 WizFi360-EVB-Shield와 연결된 **COM Port**를 확인 할 수 있습니다.
 
@@ -94,7 +94,7 @@ Hardware 설정 후, Micro 5 pin USB Cable을 이용하여 WizFi360-EVB-Shield�
 <a name="Example"></a>
 ## Step 3: 동작 예제
 
-**WizFi360**의 조금 더 상세한 **사용 방법**은 [**Quick Start Guide**][Link-Wizfi360-Quick_Start_Guide], **AT Command**는 [**AT Instruction Set**][Link-WizFi360-At_Instruction_Set]을 참고 바랍니다.
+**WizFi360**의 조금 더 상세한 **사용 방법**은 [**Quick Start Guide**][Link-Wizfi360-Quick_Start_Guide], **AT Command**는 [**AT Instruction Set**][Link-Wizfi360-At_Instruction_Set]을 참고 바랍니다.
 
 ### 1. Mode 설정
 
