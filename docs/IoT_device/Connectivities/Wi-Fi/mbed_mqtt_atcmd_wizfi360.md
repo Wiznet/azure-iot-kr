@@ -19,7 +19,7 @@
 
 > [**Azure Portal**][Link-Azure-Portal]에 Login을 합니다. 계정이 없는 경우, 계정 생성 후에 Login을 진행합니다.
 >
-> ※ 본 문서에는 [**체험 계정**][Link-Azure-Account-Free]으로 진행합니다.
+> ※ 본 문서는 [**체험 계정**][Link-Azure-Account-Free]으로 진행합니다.
 >
 > Azure Portal을 사용하여 IoT Hub 만들기 등 앞선 일련의 과정에 대하여 [Azure Cloud 서비스 소개][Link-Azure_Cloud_Introduction]를 참조하시기 바랍니다.
 >
