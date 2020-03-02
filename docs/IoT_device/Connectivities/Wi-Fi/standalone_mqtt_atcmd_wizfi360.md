@@ -123,7 +123,6 @@ Hardware 설정 후, Micro 5 Pin USB Cable을 이용하여 WizFi360-EVB-Shield�
 > **SAS Token 생성**은 다음을 참고 바랍니다.
 >
 > * [Device Explorer를 사용하여 SAS Token 생성하기][Link-Create_Sas_Token_Through_Device_Explorer]
->
 > * [Azure IoT Explorer를 사용하여 SAS Token 생성하기][Link-Create_Sas_Token_Through_Azure_Iot_Explorer]
 
 ### 5. Topic 설정
