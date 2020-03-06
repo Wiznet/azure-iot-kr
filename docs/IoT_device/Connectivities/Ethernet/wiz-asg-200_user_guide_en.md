@@ -21,7 +21,7 @@
 
 WIZ-ASG-200 is 2-port Ethernet and Wi-Fi Edge module with enhanced IoT security. User can take full advantage of Microsoft's powerful security services with Microsoft Azure Sphere on WIZ-ASG-200.
 
-One of 2-port Ethernet, WIZnet W5500 Hardwired TCP/IP Ethernet chip, is for connecting Lagecy devices and On-premise network system which cannot connect to Azure IoT Cloud. Other Ethernet port is for connecting Azure IoT Cloud. WIZ-ASG-200 supports Dual Wi-Fi bandwidth as well for Azure IoT Cloud connection.
+One of 2-port Ethernet, WIZnet W5500 Hardwired TCP/IP Ethernet chip, is for connecting Legacy devices and On-premise network system which cannot connect to Azure IoT Cloud. Other Ethernet port is for connecting Azure IoT Cloud. WIZ-ASG-200 supports Dual Wi-Fi bandwidth as well for Azure IoT Cloud connection.
 
 ### Features
 
@@ -133,6 +133,15 @@ Build Application and run with Visual Studio
 - Select **GDB Debugger (HLCore)** in `Select Startup Item` on the top menu
 - Menu - build - build solution
 - Click **GDB Debugger (HLCore)** or press **F5** to run application
+
+### Send data to Azure IoT without Legacy device
+
+In example code, `SendSimulatedTemperature()` generates a simulcated temperature data
+<br> To use this fuction, define `sampleData` as 1
+
+```C
+71  #define sampleData 1    // sample data for simulation
+```
 
 ---
 
