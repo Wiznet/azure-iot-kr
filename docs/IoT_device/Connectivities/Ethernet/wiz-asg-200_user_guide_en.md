@@ -1,6 +1,6 @@
 # Connect to Azure IoT Hub with using Azure Sphere Guardian(WIZ-ASG-200) via Ethernet or Wi-Fi
 
-## 목차
+## Contents
 
 - [Overview](#overview)
   - [Features](#features)
