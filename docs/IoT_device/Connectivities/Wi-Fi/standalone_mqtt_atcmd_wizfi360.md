@@ -129,7 +129,7 @@ Hardware 설정 후, Micro 5 Pin USB Cable을 이용하여 WizFi360-EVB-Shield�
 
 | Command | Response |
 |:--------|:--------|
-| AT+MQTTTOPIC="devices/**device_id**/messages/events/",devices/**device_id**/messages/devicebound/# <br><br> Example : <br> AT+MQTTTOPIC="devices/**MyWizFi360IoTDevice**/messages/events/","devices/**MyWizFi360IoTDevice**/messages/devicebound/#" | OK |
+| AT+MQTTTOPIC="devices/**device_id**/messages/events/","devices/**device_id**/messages/devicebound/#" <br><br> Example : <br> AT+MQTTTOPIC="devices/**MyWizFi360IoTDevice**/messages/events/","devices/**MyWizFi360IoTDevice**/messages/devicebound/#" | OK |
 
 ### 6. Broker 연결
 
